@@ -1,6 +1,7 @@
 import cn from "classnames";
 import Content from "components/Content";
 import Layout, { DESCRIPTION } from "components/Layout";
+import { useAbsoluteUrl } from "hooks/useAbsoluteUrl";
 import { useSiteTitle } from "hooks/useSiteTitle";
 import Head from "next/head";
 import Link from "next/link";
@@ -10,6 +11,7 @@ import classes from "./Home.module.scss";
 
 export default function Home() {
   const title = useSiteTitle();
+  const imageUrlPrefix = useAbsoluteUrl("/images");
 
   return (
     <Layout>
@@ -37,9 +39,9 @@ export default function Home() {
               },
             },
             image: [
-              "https://www.kentongardentour.com/images/og-1x1.jpg",
-              "https://www.kentongardentour.com/images/og-4x3.jpg",
-              "https://www.kentongardentour.com/images/og-16x9.jpg",
+              `${imageUrlPrefix}/og-1x1.jpg`,
+              `${imageUrlPrefix}/og-4x3.jpg`,
+              `${imageUrlPrefix}/og-16x9.jpg`,
             ],
             description: DESCRIPTION,
           })}

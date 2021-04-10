@@ -1,3 +1,4 @@
+import { useAbsoluteUrl } from "hooks/useAbsoluteUrl";
 import Head from "next/head";
 import Link from "next/link";
 import classes from "./Layout.module.scss";
@@ -12,6 +13,8 @@ interface Props {
 }
 
 export default function Layout({ children }: Props) {
+  const imageUrl = useAbsoluteUrl("/images/og-16x9.jpg");
+
   return (
     <>
       <Head>
@@ -20,10 +23,7 @@ export default function Layout({ children }: Props) {
         <meta name="description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta property="og:description" content={DESCRIPTION} />
-        <meta
-          property="og:image"
-          content="https://www.kentongardentour.com/images/og-16x9.jpg"
-        />
+        <meta property="og:image" content={imageUrl} />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
