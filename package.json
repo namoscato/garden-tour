@@ -19,6 +19,7 @@
     "sass": "^1.32.8"
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.4",
     "@types/react": "^17.0.3",
     "prettier": "2.2.1",
     "schema-dts": "^0.8.2",

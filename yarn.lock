@@ -322,6 +322,11 @@
   resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.0.2.tgz#4eb91acb58ea5bd1cc73f18e9e6d43843b357cc2"
   integrity sha512-dlwvlK5BQv0YZmoMQNFjObrzru86JwGaWE68mnOzCASTB2ULKNaBlWfn/4v8Eddz5X2LiHu4NTHjx3zjQuQMvA==
 
+"@types/gtag.js@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.4.tgz#81427d703b5a889b4fd1c37eaae6f2a6db228e5a"
+  integrity sha512-rn4yaEfryXklAtsiai4xHNUgLjGD8AEPQBNSCTa5QrvccFYYBWJQRGwaHiv2U/wdIzcjOuyyBC23YgdQfq5u/Q==
+
 "@types/mdast@^3.0.0":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/mdast/-/mdast-3.0.3.tgz#2d7d671b1cd1ea3deb306ea75036c2a0407d2deb"
