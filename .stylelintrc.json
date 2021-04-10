@@ -1,0 +1,11 @@
+{
+  "extends": ["stylelint-config-sass-guidelines", "stylelint-config-prettier"],
+  "rules": {
+    "selector-class-pattern": [
+      "^[A-Za-z0-9]+$",
+      {
+        "message": "Selector should be written in camelCase (selector-class-pattern)"
+      }
+    ]
+  }
+}

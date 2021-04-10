@@ -1,0 +1,37 @@
+@import "variables";
+
+/* stylelint-disable-next-line selector-max-id */
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+body {
+  background-color: $color-white;
+  color: $color-black;
+  font-family: "Nunito", sans-serif;
+}
+
+.button {
+  background-color: $color-blue;
+  border: 0;
+  border-radius: 0.9em;
+  box-sizing: border-box;
+  color: $color-white !important;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  padding: 0.9em 1.1em;
+  text-decoration: none;
+  transition: background-color $transition-duration !important;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($color-blue, 5%);
+  }
+
+  &:active {
+    background-color: darken($color-blue, 5%);
+  }
+}

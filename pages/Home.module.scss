@@ -1,0 +1,35 @@
+@import "../styles/variables";
+
+.root {
+  max-width: 31.25rem;
+}
+
+.title {
+  color: $color-blue;
+  font-size: 1em;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.dates {
+  font-size: 1.6em;
+  font-weight: normal;
+  margin: 0;
+}
+
+.registration {
+  align-items: center;
+  color: $color-blue;
+  display: flex;
+  margin-top: 1em;
+}
+
+.registrationButton {
+  margin-right: 0.8em;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .title {
+    margin-top: $gutter-lg;
+  }
+}

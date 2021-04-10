@@ -1,0 +1,28 @@
+@import "../styles/variables";
+
+.root {
+  box-sizing: border-box;
+  line-height: 1.6;
+  max-width: 43.75rem;
+  padding: 0 $gutter-sm;
+}
+
+.root a {
+  border-bottom: 1px solid $color-blue;
+  color: $color-blue;
+  text-decoration: none;
+  transition: border-bottom-color $transition-duration,
+    color $transition-duration;
+
+  &:hover,
+  &:focus {
+    border-bottom-color: $color-black;
+    color: $color-black;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .root {
+    padding: 0 $gutter-lg;
+  }
+}
