@@ -21,8 +21,8 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "Event",
             name: title,
-            startDate: "2021-06-18T20:30:00-05:00",
-            endDate: "2021-06-16:00:00-05:00",
+            startDate: "2021-07-16T20:30:00-05:00",
+            endDate: "2021-07-18T16:00:00-05:00",
             eventAttendanceMode:
               "https://schema.org/OfflineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
@@ -51,11 +51,11 @@ export default function Home() {
           <h1 className={classes.title}>2021 Garden Tour</h1>
           <ul className={classes.dates}>
             <li>
-              <div className={classes.dateDay}>June 18 – 19</div>
+              <div className={classes.dateDay}>July 16 – 17</div>
               <div className={classes.dateTime}>8:30pm – 10:30pm</div>
             </li>
             <li>
-              <div className={classes.dateDay}>June 19 – 20</div>
+              <div className={classes.dateDay}>July 17 – 18</div>
               <div className={classes.dateTime}>10am – 4pm</div>
             </li>
           </ul>
@@ -65,7 +65,7 @@ export default function Home() {
                 Register
               </a>
             </Link>
-            by June 8
+            by June 4
           </div>
           <h1 className={classes.title}>About</h1>
           <p>
