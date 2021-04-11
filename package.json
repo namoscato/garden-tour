@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "stylelint \"**/*.scss\""
+    "lint": "stylelint \"**/*.scss\"",
+    "prettier": "prettier --check .",
+    "test": "yarn lint && yarn prettier"
   },
   "dependencies": {
     "@typeform/embed": "^1.0.2",
