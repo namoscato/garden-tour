@@ -6,14 +6,14 @@ import Head from "next/head";
 import { useEffect, useRef } from "react";
 import classes from "./Register.module.scss";
 
-const TYPEFORM_FORM_ID = "P8UufQ7p";
+const REGISTER_TYPEFORM_ID = process.env.NEXT_PUBLIC_REGISTER_TYPEFORM_ID;
 
 export default function Register() {
   const title = useSiteTitle("Register");
   const typeformContainer = useRef<HTMLDivElement>();
 
   useEffect(() => {
-    createWidget(TYPEFORM_FORM_ID, {
+    createWidget(REGISTER_TYPEFORM_ID, {
       container: typeformContainer.current,
     });
   }, []);

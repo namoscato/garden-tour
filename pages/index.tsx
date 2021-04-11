@@ -50,11 +50,16 @@ export default function Home() {
       <Content>
         <div className={classes.root}>
           <h1 className={classes.title}>2021 Garden Tour</h1>
-          <h2 className={classes.dates}>
-            June 19 – 20 / 10am – 4pm
-            <br />
-            June 18 – 19 / 8:30pm – 10:30pm
-          </h2>
+          <ul className={classes.dates}>
+            <li>
+              <div className={classes.dateDay}>June 18 – 19</div>
+              <div className={classes.dateTime}>8:30pm – 10:30pm</div>
+            </li>
+            <li>
+              <div className={classes.dateDay}>June 19 – 20</div>
+              <div className={classes.dateTime}>10am – 4pm</div>
+            </li>
+          </ul>
           <div className={classes.registration}>
             <Link href="/register">
               <a className={cn("button", classes.registrationButton)}>
