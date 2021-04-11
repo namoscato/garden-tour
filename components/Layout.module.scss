@@ -31,6 +31,11 @@ $image-width: 40vw;
   }
 }
 
+.title {
+  font-weight: normal;
+  margin: 1.5rem $gutter-sm;
+}
+
 .footer {
   color: $color-gray;
   font-size: 0.9em;
@@ -73,6 +78,10 @@ $image-width: 40vw;
     > a {
       margin-left: 2rem;
     }
+  }
+
+  .title {
+    margin-left: 2rem;
   }
 
   .main {

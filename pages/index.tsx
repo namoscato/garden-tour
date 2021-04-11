@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>{title}</title>
         <script
           {...jsonLdScriptProps<Event>({
             "@context": "https://schema.org",

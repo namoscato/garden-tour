@@ -1,17 +1,10 @@
 import "@typeform/embed/build/css/widget.css";
 import Content from "components/Content";
 import Layout from "components/Layout";
-import { useSiteTitle } from "hooks/useSiteTitle";
-import Head from "next/head";
 
 export default function Register() {
-  const title = useSiteTitle("About");
-
   return (
-    <Layout>
-      <Head>
-        <title>{title}</title>
-      </Head>
+    <Layout title="About">
       <Content>
         <p>
           The Ken-Ton Garden Tour is one of the most anticipated events of the

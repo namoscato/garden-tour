@@ -1,4 +1,5 @@
 import { useAbsoluteUrl } from "hooks/useAbsoluteUrl";
+import { useSiteTitle } from "hooks/useSiteTitle";
 import Head from "next/head";
 import Link from "next/link";
 import classes from "./Layout.module.scss";
@@ -10,16 +11,19 @@ export const DESCRIPTION =
 
 interface Props {
   children: React.ReactNode;
+  title?: string;
 }
 
-export default function Layout({ children }: Props) {
+export default function Layout({ children, title }: Props) {
   const imageUrl = useAbsoluteUrl("/images/og-16x9.jpg");
+  const siteTitle = useSiteTitle(title);
 
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <title>{siteTitle}</title>
         <meta name="description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta property="og:description" content={DESCRIPTION} />
@@ -65,10 +69,13 @@ export default function Layout({ children }: Props) {
               <Logo />
             </a>
           </Link>
-          <nav className={classes.nav}>
-            <NavigationLink href="/register">Register</NavigationLink>
-            <NavigationLink href="/about">About</NavigationLink>
-          </nav>
+          <div>
+            <nav className={classes.nav}>
+              <NavigationLink href="/register">Register</NavigationLink>
+              <NavigationLink href="/about">About</NavigationLink>
+            </nav>
+            {!!title && <h1 className={classes.title}>{title}</h1>}
+          </div>
         </header>
         <main className={classes.main}>{children}</main>
         <footer className={classes.footer}>
