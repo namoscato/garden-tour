@@ -52,7 +52,7 @@ export default function Home() {
           <ul className={classes.dates}>
             <li>
               <div className={classes.dateDay}>July 16 – 17</div>
-              <div className={classes.dateTime}>8:30pm – 10:30pm</div>
+              <div className={classes.dateTime}>8:30pm – 11pm</div>
             </li>
             <li>
               <div className={classes.dateDay}>July 17 – 18</div>
