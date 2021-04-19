@@ -317,10 +317,10 @@
     remark "^13.0.0"
     unist-util-find-all-after "^3.0.2"
 
-"@typeform/embed@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.0.2.tgz#4eb91acb58ea5bd1cc73f18e9e6d43843b357cc2"
-  integrity sha512-dlwvlK5BQv0YZmoMQNFjObrzru86JwGaWE68mnOzCASTB2ULKNaBlWfn/4v8Eddz5X2LiHu4NTHjx3zjQuQMvA==
+"@typeform/embed@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.1.5.tgz#9c8c24978b4648b95b6325e64d34f4eb28fd9119"
+  integrity sha512-jAS6x3zEVO304VpE0HhbtYTIAGGGKraNzCRBO6Xkw3rB8diOc81m9QqGT5QY2AX3SZGaqliFhpJkTZMwNLLeKg==
 
 "@types/gtag.js@^0.0.4":
   version "0.0.4"
