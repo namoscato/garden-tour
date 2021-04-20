@@ -1,16 +1,15 @@
 import cn from "classnames";
 import Content from "components/Content";
-import Layout, { DESCRIPTION } from "components/Layout";
+import Layout from "components/Layout";
 import { useAbsoluteUrl } from "hooks/useAbsoluteUrl";
-import { useSiteTitle } from "hooks/useSiteTitle";
 import Head from "next/head";
 import Link from "next/link";
 import { jsonLdScriptProps } from "react-schemaorg";
 import { Event } from "schema-dts";
 import classes from "./Home.module.scss";
+import { DESCRIPTION, TITLE } from "./_app";
 
 export default function Home() {
-  const title = useSiteTitle();
   const imageUrlPrefix = useAbsoluteUrl("/images");
 
   return (
@@ -20,7 +19,7 @@ export default function Home() {
           {...jsonLdScriptProps<Event>({
             "@context": "https://schema.org",
             "@type": "Event",
-            name: title,
+            name: TITLE,
             startDate: "2021-07-16T20:30:00-05:00",
             endDate: "2021-07-18T16:00:00-05:00",
             eventAttendanceMode:
