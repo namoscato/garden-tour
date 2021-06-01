@@ -13,7 +13,7 @@
   "dependencies": {
     "@typeform/embed": "^1.7.0",
     "classnames": "^2.3.1",
-    "next": "10.2.0",
+    "next": "10.2.3",
     "next-seo": "^4.24.0",
     "normalize.css": "^8.0.1",
     "react": "17.0.2",
