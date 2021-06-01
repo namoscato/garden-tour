@@ -322,10 +322,10 @@
   resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.7.0.tgz#14e4a2dcbe03719b1d0685e2bdc7b234a5a4df6e"
   integrity sha512-5F0eEW6EbfBIcOJSfshjAOO2WuR8oAKhp1zNfTal4+taWgtgS2K4FT4FAF9+lvrUWvH1U7h0e/TEMrQMERPugw==
 
-"@types/gtag.js@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.4.tgz#81427d703b5a889b4fd1c37eaae6f2a6db228e5a"
-  integrity sha512-rn4yaEfryXklAtsiai4xHNUgLjGD8AEPQBNSCTa5QrvccFYYBWJQRGwaHiv2U/wdIzcjOuyyBC23YgdQfq5u/Q==
+"@types/gtag.js@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.5.tgz#f65748ea9af93c634b76e40bc5b923c45d877c0a"
+  integrity sha512-M9r87Q4gg/i4bJF/i2VGqP6nAoaGEgXRoNaOtaUsCT+yUo75upVRXOYU6oa8+U+JXgrC/TEE8X02zkjo49buHQ==
 
 "@types/mdast@^3.0.0":
   version "3.0.3"
