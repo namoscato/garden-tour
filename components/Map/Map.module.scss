@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  box-sizing: border-box;
+  height: 10rem;
+  margin-top: -10rem;
+  overflow-x: auto;
+  z-index: 1;
+}
+
+.sidebarGardens {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebarGardens > li {
+  background-color: $color-white;
+  border-radius: 1rem;
+  display: block;
+  min-width: 90vw;
+}
+
+.map {
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .root {
+    flex-direction: row-reverse;
+  }
+
+  .sidebar {
+    box-shadow: 2px 0 1rem rgb(0 0 0 / 15%);
+    height: auto;
+    margin-top: 0;
+    max-height: 100vh;
+    overflow-x: visible;
+    overflow-y: auto;
+    width: 40rem;
+  }
+
+  .sidebarGardens {
+    display: block;
+  }
+
+  .sidebarGardens > li {
+    border-bottom: 1px solid $color-gray-light;
+    border-radius: 0;
+    min-width: 0;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}

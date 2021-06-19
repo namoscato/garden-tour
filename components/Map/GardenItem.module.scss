@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+
+.root {
+  cursor: pointer;
+  height: 100%;
+  padding: 1rem 1.5rem;
+
+  &:hover {
+    background-color: $color-gray-light;
+  }
+}
+
+.active {
+  background-color: $color-gray-light;
+}
+
+.title {
+  align-items: center;
+  color: $color-blue;
+  display: flex;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.titleNumber {
+  background-color: $color-blue;
+  border-radius: 50%;
+  color: $color-white;
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: normal;
+  line-height: 2;
+  margin-right: 0.5em;
+  text-align: center;
+  width: 2em;
+}

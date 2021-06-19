@@ -1,9 +1,12 @@
 {
     "cSpell.words": [
+        "Geocoded",
         "Tonawanda",
         "VERCEL",
+        "geocode",
         "gtag",
         "stylelint",
         "typeform"
-    ]
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
 }

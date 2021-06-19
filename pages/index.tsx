@@ -1,9 +1,11 @@
 import cn from "classnames";
 import Content from "components/Content";
+import Dates from "components/Dates";
 import Layout from "components/Layout";
 import { useAbsoluteUrl } from "hooks/useAbsoluteUrl";
 import Head from "next/head";
 import Link from "next/link";
+import React from "react";
 import { jsonLdScriptProps } from "react-schemaorg";
 import { Event } from "schema-dts";
 import classes from "./Home.module.scss";
@@ -48,23 +50,13 @@ export default function Home() {
       <Content>
         <div className={classes.root}>
           <h1 className={classes.title}>2021 Garden Tour</h1>
-          <ul className={classes.dates}>
-            <li>
-              <div className={classes.dateDay}>July 16 – 17</div>
-              <div className={classes.dateTime}>8:30pm – 11pm</div>
-            </li>
-            <li>
-              <div className={classes.dateDay}>July 17 – 18</div>
-              <div className={classes.dateTime}>10am – 4pm</div>
-            </li>
-          </ul>
-          <div className={classes.registration}>
-            <Link href="/register">
-              <a className={cn("button", classes.registrationButton)}>
-                Register
+          <Dates />
+          <div className={classes.callToAction}>
+            <Link href="/guide">
+              <a className={cn("button", classes.callToActionButton)}>
+                View Guide
               </a>
             </Link>
-            by June 4
           </div>
           <h1 className={classes.title}>About</h1>
           <p>
