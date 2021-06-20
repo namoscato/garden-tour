@@ -1,38 +1,91 @@
-import GoogleMapReact, { Props as MapProps } from "google-map-react";
+import { useWindowWidth } from "@react-hook/window-size";
+import GoogleMapReact, { Coords } from "google-map-react";
 import { Garden } from "lib/gardensProvider/types";
-import React, { useRef, useState } from "react";
-import GardenItem from "./GardenItem";
+import React, { SyntheticEvent, useEffect, useRef, useState } from "react";
+import { useDebouncedCallback } from "use-debounce";
+import { DEFAULT_CENTER, DEFAULT_ZOOM } from "./constants";
+import {
+  cardWidthFromWindowWidth,
+  desktopBreakpoint,
+  mapOptionsFromWindowWidth,
+  mapPropsFromWindowWidth,
+} from "./functions";
+import GardenCard from "./GardenCard";
 import GardenMarker from "./GardenMarker";
 import classes from "./Map.module.scss";
-
-const MAP_PROPS: MapProps = {
-  bootstrapURLKeys: {
-    key: process.env.NEXT_PUBLIC_GOOGLE_MAPS_JS_API_KEY,
-  },
-  defaultCenter: {
-    lat: 42.9784587,
-    lng: -78.8669686,
-  },
-  defaultZoom: 13,
-};
 
 interface Props {
   gardens: Garden[];
 }
 
 export default function Map({ gardens }: Props) {
-  const gardenItems = useRef({});
+  const navigation = useRef<HTMLDivElement | null>(null);
+  const gardenItems = useRef<Record<number, HTMLLIElement | null>>({});
 
-  const [activeGarden, setActiveGarden] = useState<number>();
-  const handleChildClick = (number: string) => {
-    setActiveGarden(Number(number));
-    gardenItems.current[number]?.scrollIntoView();
+  const windowWidth = useWindowWidth();
+  const [mapProps] = useState(mapPropsFromWindowWidth(windowWidth));
+  const [mapOptions] = useState(mapOptionsFromWindowWidth(windowWidth));
+  const [center, setCenter] = useState<Coords>(DEFAULT_CENTER);
+  const [zoom, setZoom] = useState<number>(DEFAULT_ZOOM);
+
+  const [activeGarden, setActiveGarden] = useState<number | undefined>(() => {
+    console.log("windowWidth", windowWidth);
+    return desktopBreakpoint(windowWidth) ? undefined : gardens[0]?.number;
+  });
+  useEffect(() => {
+    console.log("activeGarden", activeGarden);
+    const garden = gardens.find((garden) => garden.number === activeGarden);
+
+    if (garden) {
+      // setCenter(garden.location);
+      // setZoom(14);
+    }
+  }, [activeGarden]);
+
+  const handleChildClick = (key: string) => {
+    const number = Number(key);
+    const index = gardens.findIndex((garden) => garden.number === number);
+
+    setActiveGarden(number);
+
+    if (desktopBreakpoint(windowWidth)) {
+      gardenItems.current[number]?.scrollIntoView();
+    } else if (-1 !== index) {
+      navigation.current?.scrollTo({
+        left: index * cardWidthFromWindowWidth(windowWidth),
+      });
+    }
   };
+
+  const handleScroll = useDebouncedCallback(
+    (event: SyntheticEvent<HTMLDivElement>) => {
+      if (desktopBreakpoint(windowWidth)) {
+        return;
+      }
+
+      const target = event.target as HTMLDivElement;
+      const index = Math.round(
+        target.scrollLeft / cardWidthFromWindowWidth(windowWidth)
+      );
+      const garden = gardens[index];
+
+      if (garden) {
+        setActiveGarden(garden.number);
+      }
+    },
+    100
+  );
 
   return (
     <div className={classes.root}>
       <div className={classes.map}>
-        <GoogleMapReact {...MAP_PROPS} onChildClick={handleChildClick}>
+        <GoogleMapReact
+          {...mapProps}
+          onChildClick={handleChildClick}
+          // center={center}
+          // zoom={zoom}
+          options={mapOptions}
+        >
           {gardens.map((garden) => (
             <GardenMarker
               {...garden.location}
@@ -42,14 +95,18 @@ export default function Map({ gardens }: Props) {
           ))}
         </GoogleMapReact>
       </div>
-      <div className={classes.sidebar}>
-        <ul className={classes.sidebarGardens}>
+      <div
+        className={classes.navigation}
+        onScroll={handleScroll}
+        ref={navigation}
+      >
+        <ul className={classes.gardenCards}>
           {gardens.map((garden) => (
             <li
               key={garden.number}
               ref={(li) => (gardenItems.current[garden.number] = li)}
             >
-              <GardenItem
+              <GardenCard
                 garden={garden}
                 active={activeGarden === garden.number}
                 onClick={() => setActiveGarden(garden.number)}

@@ -1,6 +1,6 @@
 import { Garden } from "lib/gardensProvider/types";
 import React from "react";
-import classes from "./GardenItem.module.scss";
+import classes from "./GardenCard.module.scss";
 import cn from "classnames";
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
   onClick: () => void;
 }
 
-export default function GardenItem({ garden, active, onClick }: Props) {
+export default function GardenCard({ garden, active, onClick }: Props) {
   return (
     <div
       className={cn(classes.root, { [classes.active]: active })}

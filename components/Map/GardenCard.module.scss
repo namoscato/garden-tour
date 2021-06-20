@@ -1,6 +1,10 @@
 @import "../../styles/variables";
 
 .root {
+  background-color: $color-white;
+  border-radius: 1rem;
+  box-shadow: 0 -2px 1rem rgb(0 0 0 / 20%);
+  box-sizing: border-box;
   cursor: pointer;
   height: 100%;
   padding: 1rem 1.5rem;
@@ -8,10 +12,6 @@
   &:hover {
     background-color: $color-gray-light;
   }
-}
-
-.active {
-  background-color: $color-gray-light;
 }
 
 .title {
@@ -33,4 +33,15 @@
   margin-right: 0.5em;
   text-align: center;
   width: 2em;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .root {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .active {
+    background-color: $color-gray-light;
+  }
 }

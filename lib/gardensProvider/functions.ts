@@ -39,7 +39,7 @@ export function isRowGeocoded(row: GoogleSpreadsheetRow): boolean {
 export async function geocodeAddress(
   client: Client,
   address: string,
-  key = process.env.GOOGLE_MAPS_GEOCODING_API_KEY
+  key = process.env.GOOGLE_MAPS_GEOCODING_API_KEY ?? ""
 ): Promise<GeocodeResult> {
   console.log("Geocoding address", { address });
   for (const postalCode of POSTAL_CODES) {
