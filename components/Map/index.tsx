@@ -4,7 +4,13 @@ import GoogleMapReact, { Bounds, Coords } from "google-map-react";
 import { Garden } from "lib/gardensProvider/types";
 import Link from "next/link";
 import { TITLE } from "pages/_app";
-import React, { SyntheticEvent, useEffect, useRef, useState } from "react";
+import React, {
+  SyntheticEvent,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { useDebouncedCallback } from "use-debounce";
 import {
   cardWidthFromWindowWidth,
@@ -31,19 +37,27 @@ export default function Map({ gardens }: Props) {
     mapProps.defaultCenter
   );
 
-  const [bounds, setBounds] = useState<Bounds>();
+  const [marginBounds, setMarginBounds] = useState<Bounds>();
   const [latLngBounds, setLatLngBounds] = useState<google.maps.LatLngBounds>();
   const initializeBounds = () => {
-    if (bounds && undefined !== window.google) {
+    if (marginBounds && undefined !== window.google) {
       setLatLngBounds(
         new google.maps.LatLngBounds(
-          new google.maps.LatLng(bounds.sw),
-          new google.maps.LatLng(bounds.ne)
+          new google.maps.LatLng(marginBounds.sw),
+          new google.maps.LatLng(marginBounds.ne)
         )
       );
     }
   };
-  useEffect(initializeBounds, [bounds]);
+  useEffect(initializeBounds, [marginBounds]);
+
+  const margin = useMemo<number[]>(() => {
+    if (desktopBreakpoint(windowWidth)) {
+      return [0, 0, 0, 0];
+    }
+
+    return [0, 0, navigation.current?.clientHeight ?? 0, 0];
+  }, [windowWidth]);
 
   const [activeGarden, setActiveGarden] = useState<number | undefined>(() => {
     return desktopBreakpoint(windowWidth) ? undefined : gardens[0]?.number;
@@ -102,8 +116,9 @@ export default function Map({ gardens }: Props) {
           onChildClick={handleChildClick}
           center={center}
           options={mapOptions}
-          onChange={({ bounds }) => setBounds(bounds)}
+          onChange={({ marginBounds }) => setMarginBounds(marginBounds)}
           onGoogleApiLoaded={initializeBounds}
+          margin={margin}
         >
           {gardens.map((garden) => (
             <GardenMarker
