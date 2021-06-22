@@ -12,7 +12,7 @@
 }
 
 .active {
-  animation: pulse 2s infinite ease-out;
+  animation: pulse 1.5s infinite ease-out;
   background-color: $color-white;
   border-color: $color-blue;
   transform: scale(1.5);
@@ -23,6 +23,6 @@
     box-shadow: 0 0 0 0 rgba(0, 35, 133, 0.6);
   }
   100% {
-    box-shadow: 0 0 0 1.2em rgba(0, 35, 133, 0);
+    box-shadow: 0 0 0 1.3em rgba(0, 35, 133, 0);
   }
 }

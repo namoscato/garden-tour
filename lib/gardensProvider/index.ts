@@ -19,5 +19,5 @@ export async function fetchGardens(): Promise<Garden[]> {
     document.sheetsById[process.env.GOOGLE_SHEETS_SHEET_ID ?? ""]
   );
 
-  return rows.map(gardenFromRow);
+  return rows.map(gardenFromRow).sort((a, b) => a.number - b.number);
 }

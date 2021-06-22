@@ -2,6 +2,7 @@ import { Garden } from "lib/gardensProvider/types";
 import React from "react";
 import classes from "./GardenCard.module.scss";
 import cn from "classnames";
+import { labelFromParticipatingOption } from "./functions";
 
 interface Props {
   garden: Garden;
@@ -20,6 +21,11 @@ export default function GardenCard({ garden, active, onClick }: Props) {
         <span>{garden.address}</span>
       </h1>
       <p>{garden.description}</p>
+      <ul className={classes.participating}>
+        {garden.participating.map((option) => (
+          <li key={option}>{labelFromParticipatingOption(option)}</li>
+        ))}
+      </ul>
     </div>
   );
 }

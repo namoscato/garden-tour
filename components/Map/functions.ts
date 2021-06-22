@@ -1,4 +1,5 @@
 import { MapOptions, Props } from "google-map-react";
+import { ParticipatingOption, SheetColumn } from "lib/gardensProvider/types";
 import { BREAKPOINT_DESKTOP, MAP_OPTIONS } from "./constants";
 
 export function cardWidthFromWindowWidth(windowWidth: number): number {
@@ -38,4 +39,25 @@ export function mapOptionsFromWindowWidth(windowWidth: number): MapOptions {
     fullscreenControl: false,
     zoomControl: false,
   };
+}
+
+export function labelFromParticipatingOption(
+  option: ParticipatingOption
+): string {
+  switch (option) {
+    case SheetColumn.ParticipatingFridayNight:
+      return "Friday Night";
+    case SheetColumn.ParticipatingSaturdayDay:
+      return "Saturday";
+    case SheetColumn.ParticipatingSaturdayNight:
+      return "Saturday Night";
+    case SheetColumn.ParticipatingSundayDay:
+      return "Sunday";
+    default:
+      return assertNever(option);
+  }
+}
+
+function assertNever(option: never): never {
+  throw new Error(`Unexpected option ${option}`);
 }

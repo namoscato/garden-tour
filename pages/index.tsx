@@ -49,7 +49,7 @@ export default function Home() {
       </Head>
       <Content>
         <div className={classes.root}>
-          <h1 className={classes.title}>2021 Garden Tour</h1>
+          <h1 className="title">2021 Garden Tour</h1>
           <Dates />
           <div className={classes.callToAction}>
             <Link href="/guide">
@@ -58,7 +58,7 @@ export default function Home() {
               </a>
             </Link>
           </div>
-          <h1 className={classes.title}>About</h1>
+          <h1 className="title">About</h1>
           <p>
             The Ken-Ton Garden Tour is one of the most anticipated events of the
             summer in the Ken-Ton community. It’s an annual celebration of color
