@@ -21,11 +21,9 @@ export default function GardenCard({ garden, active, onClick }: Props) {
         <span>{garden.address}</span>
       </h1>
       <p>{garden.description}</p>
-      <ul className={classes.participating}>
-        {garden.participating.map((option) => (
-          <li key={option}>{labelFromParticipatingOption(option)}</li>
-        ))}
-      </ul>
+      <p className={classes.participating}>
+        {garden.participating.map(labelFromParticipatingOption).join(" ∙ ")}
+      </p>
     </div>
   );
 }
