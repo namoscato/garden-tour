@@ -1,0 +1,80 @@
+@import "../../styles/variables";
+
+.root {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.navigation {
+  overflow-x: auto;
+  padding: 1.5rem 0.5rem 0.5rem;
+  scroll-padding: 5vw;
+  scroll-snap-type: x mandatory;
+  transform: translateY(-100%);
+  z-index: 1;
+}
+
+.navigationHeading {
+  display: none;
+  margin: 0 1.5rem 1rem;
+}
+
+.gardenCards {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gardenCards > li {
+  box-sizing: border-box;
+  display: block;
+  min-width: 90vw;
+  padding: 0 0.5rem;
+  scroll-snap-align: start;
+}
+
+.map {
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .root {
+    display: flex;
+    flex-direction: row-reverse;
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .navigation {
+    box-shadow: 2px 0 1rem rgb(0 0 0 / 15%);
+    height: auto;
+    margin-top: 0;
+    max-height: 100vh;
+    overflow-x: visible;
+    overflow-y: auto;
+    padding: 0;
+    scroll-snap-type: none;
+    transform: none;
+    width: 40rem;
+  }
+
+  .navigationHeading {
+    display: block;
+  }
+
+  .gardenCards {
+    display: block;
+  }
+
+  .gardenCards > li {
+    border-bottom: 1px solid $color-gray-light;
+    min-width: 0;
+    padding: 0;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}

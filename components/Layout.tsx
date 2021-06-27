@@ -1,5 +1,6 @@
 import { NextSeo } from "next-seo";
 import Link from "next/link";
+import { TITLE } from "pages/_app";
 import classes from "./Layout.module.scss";
 import Logo from "./Logo";
 import NavigationLink from "./NavigationLink";
@@ -23,7 +24,7 @@ export default function Layout({ children, title }: Props) {
           </Link>
           <div>
             <nav className={classes.nav}>
-              <NavigationLink href="/register">Register</NavigationLink>
+              <NavigationLink href="/guide">Guide</NavigationLink>
               <NavigationLink href="/about">About</NavigationLink>
             </nav>
             {!!title && <h1 className={classes.title}>{title}</h1>}
@@ -31,7 +32,7 @@ export default function Layout({ children, title }: Props) {
         </header>
         <main className={classes.main}>{children}</main>
         <footer className={classes.footer}>
-          &copy; {new Date().getFullYear()} Ken-Ton Garden Tour.
+          &copy; {new Date().getFullYear()} {TITLE}.
         </footer>
       </div>
     </>
