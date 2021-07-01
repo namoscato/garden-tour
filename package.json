@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@react-hook/window-size": "^3.0.7",
-    "@typeform/embed": "^1.8.0",
+    "@typeform/embed": "^1.10.0",
     "classnames": "^2.3.1",
-    "google-map-react": "^2.1.9",
+    "google-map-react": "^2.1.10",
     "next": "10.2.3",
     "next-seo": "^4.24.0",
     "normalize.css": "^8.0.1",
@@ -22,13 +22,13 @@
     "react-dom": "17.0.2",
     "react-schemaorg": "^1.3.3",
     "sass": "^1.34.0",
-    "use-debounce": "^6.0.1"
+    "use-debounce": "^7.0.0"
   },
   "devDependencies": {
     "@googlemaps/google-maps-services-js": "^3.1.16",
     "@types/google-map-react": "^2.1.1",
     "@types/google-spreadsheet": "^3.1.3",
-    "@types/google.maps": "^3.45.3",
+    "@types/google.maps": "^3.45.4",
     "@types/gtag.js": "^0.0.5",
     "@types/react": "^17.0.8",
     "google-spreadsheet": "^3.1.15",
@@ -37,6 +37,6 @@
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-sass-guidelines": "^8.0.0",
-    "typescript": "^4.3.2"
+    "typescript": "^4.3.5"
   }
 }
