@@ -2308,10 +2308,10 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
-next-seo@^4.24.0:
-  version "4.24.0"
-  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.24.0.tgz#7c0447da00b8574dcda5c6979771a7f6efd24f55"
-  integrity sha512-9VQXfXAelhE+hAWzJ4azigQaW3FPX0kU0eYKFQXKsQjgY7AWtukjRGXls0oSIk8khhDJwmCt46EwsO9n5DDW6Q==
+next-seo@^4.26.0:
+  version "4.26.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.26.0.tgz#4218cfae5651fdc2e330dcdf1cc1b34ce199d41c"
+  integrity sha512-5TqywQ3XAwqdmEU1AyNZjR7WdDKFTkDD8aBtgQelPvzBUEy8i0mTjtiw+09jhiHFNik6FqS8uPKCaYcY6jRgSQ==
 
 next@10.2.3:
   version "10.2.3"
@@ -2871,10 +2871,10 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
-react-schemaorg@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/react-schemaorg/-/react-schemaorg-1.3.1.tgz#75dd1eb9fd74bcaf57db1b100a2b50f34506b3b3"
-  integrity sha512-bYlb2PppiwZZsIC+TqVUCTj8SiFiaNy7BLlg0lLJrLA5phNxuEH/i0rVOcXdyNU2d2EBYJLktEc0iwBQ/de/XQ==
+react-schemaorg@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/react-schemaorg/-/react-schemaorg-1.3.3.tgz#c249810db84f526e6fb8cfdfee69855635546019"
+  integrity sha512-yPoJgw05+QsK+T3CvBY4gtBw5HpHYyNi5EqPUbYlOFcw/+rzKdOAWyxufmBZ6RCQ3dWK1drNXURhwApDi44pwA==
 
 react@17.0.2:
   version "17.0.2"
