@@ -379,10 +379,10 @@
     remark "^13.0.0"
     unist-util-find-all-after "^3.0.2"
 
-"@typeform/embed@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.10.0.tgz#df3d835045ca971901ce071d18c510e1b4fc3d88"
-  integrity sha512-ibMR0Y8AIXaIw2PpjpiiKbq51C3UwYN2XIFog/1jGLKlZmfphQTmxZq6mN3gMXnWj8kkz3BABdqLzeXZ5hO9yA==
+"@typeform/embed@^1.15.2":
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.15.2.tgz#25fd95fc4c50ec126a44561cf77ba48a21f314b0"
+  integrity sha512-LuBK9A7gfYrcqFi+WU9RpIQpdHyKOCZeQG5VuycZa5ri+r/n+q7au97+dwVFzsqvfwVKkErfhPP/brDSPFrg3A==
 
 "@types/google-map-react@^2.1.1":
   version "2.1.1"
@@ -3049,10 +3049,10 @@ scheduler@^0.20.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-schema-dts@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-0.8.3.tgz#6c03ca47200e80e9a871d6de626a7cf04fe009b7"
-  integrity sha512-GSLeVkUgEe8DzS8/FGWou1wlC8tQ1KXA5amCqCIH/psUzF74fWswtT0QFlSoJLT08CYyixnc3S/lkAm+RExoLQ==
+schema-dts@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-0.9.0.tgz#23d9f7111774ba253b6dfda0cea47a2b323a647d"
+  integrity sha512-awQ5s+OBV7w7GcvoZvG4F/IaZQWqniOmN1L5PL99dxKLIpjYiqWB8za+LIvuZ4S69oqfzRrpJhJk8Vr4mGEEQA==
 
 "semver@2 || 3 || 4 || 5":
   version "5.7.1"
