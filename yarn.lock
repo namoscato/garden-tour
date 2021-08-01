@@ -379,10 +379,10 @@
     remark "^13.0.0"
     unist-util-find-all-after "^3.0.2"
 
-"@typeform/embed@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.10.0.tgz#df3d835045ca971901ce071d18c510e1b4fc3d88"
-  integrity sha512-ibMR0Y8AIXaIw2PpjpiiKbq51C3UwYN2XIFog/1jGLKlZmfphQTmxZq6mN3gMXnWj8kkz3BABdqLzeXZ5hO9yA==
+"@typeform/embed@^1.15.2":
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.15.2.tgz#25fd95fc4c50ec126a44561cf77ba48a21f314b0"
+  integrity sha512-LuBK9A7gfYrcqFi+WU9RpIQpdHyKOCZeQG5VuycZa5ri+r/n+q7au97+dwVFzsqvfwVKkErfhPP/brDSPFrg3A==
 
 "@types/google-map-react@^2.1.1":
   version "2.1.1"
