@@ -384,10 +384,10 @@
   resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.15.2.tgz#25fd95fc4c50ec126a44561cf77ba48a21f314b0"
   integrity sha512-LuBK9A7gfYrcqFi+WU9RpIQpdHyKOCZeQG5VuycZa5ri+r/n+q7au97+dwVFzsqvfwVKkErfhPP/brDSPFrg3A==
 
-"@types/google-map-react@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@types/google-map-react/-/google-map-react-2.1.1.tgz#b9984eb50c407574fb8d5c0e723b9cca0e03dddf"
-  integrity sha512-nU1pMoiLbKRNk8SE4EJaoT/Q8x23sqYuW5WoXDUvDcltNYPeF3/09SYhHfj0tQNABO0UA3XiNynAkjKqvNz00Q==
+"@types/google-map-react@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@types/google-map-react/-/google-map-react-2.1.2.tgz#5ef0eb5fd4c530846acc4fa82c90b67c3f69799f"
+  integrity sha512-m3TmOW2GuTxTx+7DZ8gi2mYS1vDZLehqS+hY3/PWtW2lwZFIGwmsovMZjH+P7SyrFTekoKGWp5KkWF8nnwEA7w==
   dependencies:
     "@types/react" "*"
 
