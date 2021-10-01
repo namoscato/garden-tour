@@ -415,10 +415,10 @@
     remark "^13.0.0"
     unist-util-find-all-after "^3.0.2"
 
-"@typeform/embed@^1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.18.0.tgz#5319240ceea9df3369b4a45c7dc48bd91b5d3ab2"
-  integrity sha512-c3CyqcdbnGx8bCa5fq+V9vg8j+HLjkciV5ITM0dsU3TLPB1aeLCTALcW07b2FiGajoLO8E9pZQAHLRbquvVOSQ==
+"@typeform/embed@^1.19.0":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.19.0.tgz#df878f2376c6edc891a076e2c5b4cad0039b46a6"
+  integrity sha512-cnQMZD/ergbzJCx8MEfi9+UmW4TumOkqUx+ln4h6Hyo/PeMK74JJFoGZCeAG7isOUg7SW5TkIGm/xrgtLGK+PQ==
 
 "@types/google-map-react@^2.1.2":
   version "2.1.2"
