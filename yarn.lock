@@ -233,14 +233,15 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@googlemaps/google-maps-services-js@^3.1.16":
-  version "3.1.16"
-  resolved "https://registry.yarnpkg.com/@googlemaps/google-maps-services-js/-/google-maps-services-js-3.1.16.tgz#e82dc8f202c87b042d3b4c989936110cb83da2e2"
-  integrity sha512-Hb1zItxsm68vkWb5i+/wDj64ZK66DZlatglkdNWAWM2ziARdgj+Q4XeWxbkdHh+/OKmeKEcknC8ADF9ZgS/G1w==
+"@googlemaps/google-maps-services-js@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@googlemaps/google-maps-services-js/-/google-maps-services-js-3.2.2.tgz#7f650fedf3e627111c26fa220612bb6bbd8c1a4b"
+  integrity sha512-lzaKdtOlyBZwP53VSB7LCB9oMvOe8N/6RuyMJMlb3pZge8TghwmEB1Y3JF0ZFvHyV45i2qR9iqxj8q3jsJX+aw==
   dependencies:
     agentkeepalive "^4.1.0"
     axios "^0.21.1"
-    query-string "^6.11.0"
+    crypto "^1.0.1"
+    query-string "^7.0.1"
     retry-axios "^2.2.1"
 
 "@googlemaps/js-api-loader@^1.7.0":
@@ -1048,6 +1049,11 @@ crypto-browserify@3.12.0, crypto-browserify@^3.11.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
     randomfill "^1.0.3"
+
+crypto@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/crypto/-/crypto-1.0.1.tgz#2af1b7cad8175d24c8a1b0778255794a21803037"
+  integrity sha512-VxBKmeNcqQdiUQUW2Tzq0t377b54N2bMtXO/qiLa+6eRRmmC4qT3D4OnTGoT/U6O9aklQ/jTwbOtRMTTY8G0Ig==
 
 css.escape@1.5.1:
   version "1.5.1"
@@ -2821,10 +2827,10 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-query-string@^6.11.0:
-  version "6.14.1"
-  resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.14.1.tgz#7ac2dca46da7f309449ba0f86b1fd28255b0c86a"
-  integrity sha512-XDxAeVmpfu1/6IjyT/gXHOl+S0vQ9owggJ30hhWKdHAsNPOcasn5o9BW0eejZqL2e4vMjhAxoW3jVHcD6mbcYw==
+query-string@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-7.0.1.tgz#45bd149cf586aaa582dffc7ec7a8ad97dd02f75d"
+  integrity sha512-uIw3iRvHnk9to1blJCG3BTc+Ro56CBowJXKmNNAm3RulvPBzWLRqKSiiDk+IplJhsydwtuNMHi8UGQFcCLVfkA==
   dependencies:
     decode-uri-component "^0.2.0"
     filter-obj "^1.1.0"
