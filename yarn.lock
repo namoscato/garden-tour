@@ -233,14 +233,14 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@googlemaps/google-maps-services-js@^3.2.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@googlemaps/google-maps-services-js/-/google-maps-services-js-3.2.2.tgz#7f650fedf3e627111c26fa220612bb6bbd8c1a4b"
-  integrity sha512-lzaKdtOlyBZwP53VSB7LCB9oMvOe8N/6RuyMJMlb3pZge8TghwmEB1Y3JF0ZFvHyV45i2qR9iqxj8q3jsJX+aw==
+"@googlemaps/google-maps-services-js@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@googlemaps/google-maps-services-js/-/google-maps-services-js-3.3.0.tgz#07a02c7122d05d01ca2a94ae0568ac8e791ac0da"
+  integrity sha512-CvHkn0Svjanks1DaW/1MUDIIJCnehX7FLtpWuGb5L98xQrH9/IAOMjJSJCVPaSg9jhUoSiPkX1iDKnYbzJPWqg==
   dependencies:
+    "@googlemaps/url-signature" "^1.0.2"
     agentkeepalive "^4.1.0"
     axios "^0.21.1"
-    crypto "^1.0.1"
     query-string "^7.0.1"
     retry-axios "^2.2.1"
 
@@ -250,6 +250,13 @@
   integrity sha512-Nmk7pKn/819zIC0QTE5eA+kNmYpODQXyoCdk17nWiqx42gcb6NQEwssAuH/Aa+HeF0+ICYf5khIxDyY5njWJdg==
   dependencies:
     fast-deep-equal "^3.1.3"
+
+"@googlemaps/url-signature@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@googlemaps/url-signature/-/url-signature-1.0.2.tgz#3760f1ccde392f808ba506db724f9c0440dfad5e"
+  integrity sha512-Td7uGc4bgHenGbh4gpIqypTZjBFgC6O73UGyWj9zJdMRWiZeU8MDl4snNlKpuo7V3Mb1BIDR6o9UcFTYXtLNfQ==
+  dependencies:
+    crypto-js "^4.1.1"
 
 "@hapi/accept@5.0.2":
   version "5.0.2"
@@ -1051,10 +1058,10 @@ crypto-browserify@3.12.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
-crypto@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/crypto/-/crypto-1.0.1.tgz#2af1b7cad8175d24c8a1b0778255794a21803037"
-  integrity sha512-VxBKmeNcqQdiUQUW2Tzq0t377b54N2bMtXO/qiLa+6eRRmmC4qT3D4OnTGoT/U6O9aklQ/jTwbOtRMTTY8G0Ig==
+crypto-js@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.1.1.tgz#9e485bcf03521041bd85844786b83fb7619736cf"
+  integrity sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==
 
 css.escape@1.5.1:
   version "1.5.1"
