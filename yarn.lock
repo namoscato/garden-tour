@@ -433,10 +433,10 @@
   resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.1.5.tgz#2bdc6f9f5372551e0506cb6ef3f562adcf44fc2e"
   integrity sha512-7N+mDtZ1pmya2RRFPPl4KYc2TRgiqCNBLUZfyrKfER+u751JgCO+C24/LzF70UmUm/zhHUbzRZ5mtfaxekQ1ZQ==
 
-"@types/google.maps@^3.45.6":
-  version "3.45.6"
-  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.45.6.tgz#441a7bc76424243b307596fc8d282a435a979ebd"
-  integrity sha512-BzGzxs8UXFxeP8uN/0nRgGbsbpYQxSCKsv/7S8OitU7wwhfFcqQSm5aAcL1nbwueMiJ/VVmIZKPq69s0kX5W+Q==
+"@types/google.maps@^3.46.0":
+  version "3.46.0"
+  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.46.0.tgz#32061ffb918879517a96950855c132d909fbc5b5"
+  integrity sha512-TvrN/+XkDSblCrkx9bJXSrYOrDeUgiPl1ec215vv4mYBuvU3YOAq0XVB32dV6r7ySctqJO1M7aEgVJsJZOgrmQ==
 
 "@types/gtag.js@^0.0.7":
   version "0.0.7"
