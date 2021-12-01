@@ -265,10 +265,10 @@
     "@react-hook/event" "^1.2.1"
     "@react-hook/throttle" "^2.2.0"
 
-"@typeform/embed@^1.20.2":
-  version "1.20.2"
-  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.20.2.tgz#cad78adf65e6ebf9ad2f3cffd1a5c24bee237ddf"
-  integrity sha512-pKBDs2FYDYfuZ5ZfRw8Vd7+qvA/1/sFPm/+pgeCfb7GIUNHdAv01aSsGoNa0GK/IctLgX/hw1L3WlOTEajDJWg==
+"@typeform/embed@^1.24.1":
+  version "1.24.1"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.24.1.tgz#feb37164f0cb0ce51e348dd0a1389a993e2f011a"
+  integrity sha512-a0VE/kl0XOm1/L5NBD8TpxXEqmB2sriAPBGbmn/Y8zVuVJHJpMYoVReFCYxPDWgj7kV0OYkRHll9or0rOMBIvA==
 
 "@types/google-map-react@^2.1.3":
   version "2.1.3"
