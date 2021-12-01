@@ -473,10 +473,10 @@
   resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.46.0.tgz#32061ffb918879517a96950855c132d909fbc5b5"
   integrity sha512-TvrN/+XkDSblCrkx9bJXSrYOrDeUgiPl1ec215vv4mYBuvU3YOAq0XVB32dV6r7ySctqJO1M7aEgVJsJZOgrmQ==
 
-"@types/gtag.js@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.7.tgz#ac3c2008a5f943fa503d17355a8a8bbc80b603ed"
-  integrity sha512-Kl5beBoB0OXw7WeFgHHpLEchvC7HyIu3v1AksNNTemAF6jmEmQGqhZQSHcG6BOU/Lq0xsByQNqLzicLPjVkxYQ==
+"@types/gtag.js@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.8.tgz#43035ab23a06b3bd0b23968c5c4ef000c597ad8a"
+  integrity sha512-xKDygydxruSUNkVbZWjiEbMijz9+xZCLb2yiTiQT88pm5EhIAUhaCo05IZF1HcQc90u4W7cp+7OZNpcJxpyL5g==
 
 "@types/mdast@^3.0.0":
   version "3.0.3"
