@@ -270,10 +270,10 @@
   resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.27.1.tgz#372af8daf46f34c76d2fb33f8fa495090afb5c71"
   integrity sha512-35vXqwqOsCllrmOFiz+YJ3onhQUOrg7RVsOD2W/wMx2H5tqFGI/V4UDYNNi0J6CpWBD5GmCgk3wXbg98a607Tg==
 
-"@types/google-map-react@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@types/google-map-react/-/google-map-react-2.1.4.tgz#b3021415f285fce1d1d98da4c7b524960ddea902"
-  integrity sha512-2510nBV6Jnyr34x4W39VlhGwspDGG+8/7TSKXd8blUlWEAvmep+qjl92gWacSUipZqdngaymoCOJ1Te5SkUqag==
+"@types/google-map-react@^2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@types/google-map-react/-/google-map-react-2.1.5.tgz#2c477abffa33ae97e8bb893891892b97c5dc9135"
+  integrity sha512-79FeuNnqPbLNWLChfcqL6exS9oPfvzPkxSxdry12ueVYRaGDGWze4TjV6cRTZP4QRZxtZBTLtDqly2zeD5VEoQ==
   dependencies:
     "@types/react" "*"
 
@@ -2547,10 +2547,10 @@ scheduler@^0.20.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-schema-dts@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-1.0.0.tgz#60e8a0f2cef5e644c44c843b03d35b37a4423c01"
-  integrity sha512-9t8gnY3RW2CbpuvA0pIpcaHFXkJTeNnWR4uaWI+PiYSfpuEeMw+2Q0Gac6YTnQb1B8TR6/+G71gQWuSE7dq6Zw==
+schema-dts@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-1.1.0.tgz#33227971076ef1daa33e56a3127a8aae030e81c9"
+  integrity sha512-vdmbs/5ycj4zyKpZIDqTcy+IZi4s7c38RVAYuDmRi7zgxUT8wRWPMLzg0jr7FjdVunYu9yZ00F3+XcZTTFcTOQ==
 
 "semver@2 || 3 || 4 || 5":
   version "5.7.1"
