@@ -265,10 +265,10 @@
     "@react-hook/event" "^1.2.1"
     "@react-hook/throttle" "^2.2.0"
 
-"@typeform/embed@^1.27.1":
-  version "1.27.1"
-  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.27.1.tgz#372af8daf46f34c76d2fb33f8fa495090afb5c71"
-  integrity sha512-35vXqwqOsCllrmOFiz+YJ3onhQUOrg7RVsOD2W/wMx2H5tqFGI/V4UDYNNi0J6CpWBD5GmCgk3wXbg98a607Tg==
+"@typeform/embed@^1.32.1":
+  version "1.32.1"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.32.1.tgz#012a0a9516870ebf461a3acde0a29ea7cead8c3a"
+  integrity sha512-lFBCAdq3pMhCG0WFedlRLuZ/ME8amv1PltxgGsgxlKBtgVIoQiTggMH6ZEPRk6PKaUs4IS7hJHxsXwOCe+WBXQ==
 
 "@types/google-map-react@^2.1.5":
   version "2.1.5"
@@ -282,10 +282,10 @@
   resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.1.5.tgz#2bdc6f9f5372551e0506cb6ef3f562adcf44fc2e"
   integrity sha512-7N+mDtZ1pmya2RRFPPl4KYc2TRgiqCNBLUZfyrKfER+u751JgCO+C24/LzF70UmUm/zhHUbzRZ5mtfaxekQ1ZQ==
 
-"@types/google.maps@^3.47.3":
-  version "3.47.3"
-  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.47.3.tgz#36ec9cfb421ef8db11ba7337e006143dbd374522"
-  integrity sha512-BF/BzpO0LWiwR/bBoGVriy7e2n+syuGNQMQ0r/+GtisUcgKn9P7Z4rmLNmZko9niE8JJ5dpMkxHeen7gADlNaw==
+"@types/google.maps@^3.48.1":
+  version "3.48.1"
+  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.48.1.tgz#7f21554e75ac929e17896fc42d201b5f5e69837f"
+  integrity sha512-omUrHt83oSngRD0/pk3JW5dvTeSUVMmAFp6b2Btj5LFqPKc09f0OeHk2LIGPz12T3sRAtwkSvgmzwVMqPrIW9A==
 
 "@types/gtag.js@^0.0.8":
   version "0.0.8"
@@ -317,10 +317,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react@*", "@types/react@^17.0.38":
-  version "17.0.38"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.38.tgz#f24249fefd89357d5fa71f739a686b8d7c7202bd"
-  integrity sha512-SI92X1IA+FMnP3qM5m4QReluXzhcmovhZnLNm3pyeQlooi02qI7sLiepEYqT678uNiyc25XfCqxREFpy3W7YhQ==
+"@types/react@*", "@types/react@^17.0.39":
+  version "17.0.39"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.39.tgz#d0f4cde092502a6db00a1cded6e6bf2abb7633ce"
+  integrity sha512-UVavlfAxDd/AgAacMa60Azl7ygyQNRwC/DsHZmKgNvPmRR5p70AJ5Q9EAmL2NWOJmeV+vVUI4IAP7GZrN8h8Ug==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
