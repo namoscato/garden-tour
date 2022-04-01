@@ -62,10 +62,10 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@googlemaps/google-maps-services-js@^3.3.10":
-  version "3.3.10"
-  resolved "https://registry.yarnpkg.com/@googlemaps/google-maps-services-js/-/google-maps-services-js-3.3.10.tgz#bf3037b46c527e4c69281cb6a22ee007891654f4"
-  integrity sha512-Tc7qY9xzECCDgBXI+gKubeEpJrig18s+OwXuhNqzGqnIHOppBBkJ0moTAE7fH6bJEUUpGILF1XTAdAX25uBDsg==
+"@googlemaps/google-maps-services-js@^3.3.12":
+  version "3.3.12"
+  resolved "https://registry.yarnpkg.com/@googlemaps/google-maps-services-js/-/google-maps-services-js-3.3.12.tgz#67eea62b1ad641bf430538df9f8a39dae409a49f"
+  integrity sha512-d/cWUnzgB0kBT0X6I7Pudj8yWMxTOuAlw7pJ9Dx9mgIb11/x8BNHSuem10a5ypU7K0hCyEOG6jKQ7K/P6De8qw==
   dependencies:
     "@googlemaps/url-signature" "^1.0.4"
     agentkeepalive "^4.1.0"
