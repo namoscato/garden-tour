@@ -282,10 +282,10 @@
   resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.2.0.tgz#85cf291888aec7a063249cf0ec2b3a58f6ea2527"
   integrity sha512-WUY/RiXrANEZcUiil9mY4xB5EJPWMjJO0kkSdug0rRVwby4vKzb4DoV10AVuyT72WqDQ5iLK7OoO47tW3ll9Qw==
 
-"@types/google.maps@^3.48.1":
-  version "3.48.1"
-  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.48.1.tgz#7f21554e75ac929e17896fc42d201b5f5e69837f"
-  integrity sha512-omUrHt83oSngRD0/pk3JW5dvTeSUVMmAFp6b2Btj5LFqPKc09f0OeHk2LIGPz12T3sRAtwkSvgmzwVMqPrIW9A==
+"@types/google.maps@^3.48.3":
+  version "3.48.3"
+  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.48.3.tgz#c554fbd7076c75fdd82dbae0ff3d541f67f5c599"
+  integrity sha512-JQuLWAEXDorNfarQy22WbIezbPKhLnsTBnDw25vyg61USZLTK8KqE1glNyASKn2v2mUOcEIWFMNHX5hNzjuw/g==
 
 "@types/gtag.js@^0.0.10":
   version "0.0.10"
