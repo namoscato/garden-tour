@@ -20,7 +20,7 @@ export default function Register() {
   }, [typeformContainer.current]);
 
   return (
-    <Layout title="2021 Application">
+    <Layout title="2022 Application">
       <div className={classes.root} ref={typeformContainer} />
     </Layout>
   );

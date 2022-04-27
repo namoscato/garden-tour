@@ -22,8 +22,8 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "Event",
             name: TITLE,
-            startDate: "2021-07-16T20:30:00-05:00",
-            endDate: "2021-07-18T16:00:00-05:00",
+            startDate: "2022-07-22T20:30:00-05:00",
+            endDate: "2022-07-24T16:00:00-05:00",
             eventAttendanceMode:
               "https://schema.org/OfflineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
@@ -49,14 +49,15 @@ export default function Home() {
       </Head>
       <Content>
         <div className={classes.root}>
-          <h1 className="title">2021 Garden Tour</h1>
+          <h1 className="title">2022 Garden Tour</h1>
           <Dates />
           <div className={classes.callToAction}>
-            <Link href="/guide">
+            <Link href="/register">
               <a className={cn("button", classes.callToActionButton)}>
-                View Guide
+                Register
               </a>
             </Link>
+            by June 3
           </div>
           <h1 className="title">About</h1>
           <p>
