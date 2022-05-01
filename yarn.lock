@@ -62,10 +62,10 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@googlemaps/google-maps-services-js@^3.3.12":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@googlemaps/google-maps-services-js/-/google-maps-services-js-3.3.12.tgz#67eea62b1ad641bf430538df9f8a39dae409a49f"
-  integrity sha512-d/cWUnzgB0kBT0X6I7Pudj8yWMxTOuAlw7pJ9Dx9mgIb11/x8BNHSuem10a5ypU7K0hCyEOG6jKQ7K/P6De8qw==
+"@googlemaps/google-maps-services-js@^3.3.13":
+  version "3.3.13"
+  resolved "https://registry.yarnpkg.com/@googlemaps/google-maps-services-js/-/google-maps-services-js-3.3.13.tgz#bfac9a0740677325f87b00e9859ce35c35db5ea1"
+  integrity sha512-SWqnXjfr4UddmnpYFm7a2zIrfzkXIU+GRtfxX7yAzxzYM9M3WdkVJFnmAKLYZKomm7topbicw8Cr4l9kW82ZmA==
   dependencies:
     "@googlemaps/url-signature" "^1.0.4"
     agentkeepalive "^4.1.0"
@@ -277,10 +277,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/google-spreadsheet@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.2.0.tgz#85cf291888aec7a063249cf0ec2b3a58f6ea2527"
-  integrity sha512-WUY/RiXrANEZcUiil9mY4xB5EJPWMjJO0kkSdug0rRVwby4vKzb4DoV10AVuyT72WqDQ5iLK7OoO47tW3ll9Qw==
+"@types/google-spreadsheet@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.2.1.tgz#b53fcd02cb1c703db4b8c35752ebc0a7ec316f0c"
+  integrity sha512-k9fMPyRJuWFoRiD4ZU2xTJTBykeXIh+ittw59UHGvNVkyu0b82DorkEJe36LBlaLkqD2qPBAunVz6JZRMFvWIA==
 
 "@types/google.maps@^3.48.3":
   version "3.48.3"
