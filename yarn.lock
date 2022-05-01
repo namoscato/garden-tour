@@ -277,15 +277,15 @@
   dependencies:
     "@types/react" "*"
 
-"@types/google-spreadsheet@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.2.0.tgz#85cf291888aec7a063249cf0ec2b3a58f6ea2527"
-  integrity sha512-WUY/RiXrANEZcUiil9mY4xB5EJPWMjJO0kkSdug0rRVwby4vKzb4DoV10AVuyT72WqDQ5iLK7OoO47tW3ll9Qw==
+"@types/google-spreadsheet@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.2.1.tgz#b53fcd02cb1c703db4b8c35752ebc0a7ec316f0c"
+  integrity sha512-k9fMPyRJuWFoRiD4ZU2xTJTBykeXIh+ittw59UHGvNVkyu0b82DorkEJe36LBlaLkqD2qPBAunVz6JZRMFvWIA==
 
-"@types/google.maps@^3.48.3":
-  version "3.48.3"
-  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.48.3.tgz#c554fbd7076c75fdd82dbae0ff3d541f67f5c599"
-  integrity sha512-JQuLWAEXDorNfarQy22WbIezbPKhLnsTBnDw25vyg61USZLTK8KqE1glNyASKn2v2mUOcEIWFMNHX5hNzjuw/g==
+"@types/google.maps@^3.48.7":
+  version "3.48.7"
+  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.48.7.tgz#2291e7fd41af797d4827c0f19e5609b1c07bf42e"
+  integrity sha512-mssJhNv6jwk+zyh0MpYWWTsL99l84nEz7m+l0p4MY2f2iqdkOYl2kDFdB7g7ME0ih41V0kaZXsjntkq5ul/UyQ==
 
 "@types/gtag.js@^0.0.10":
   version "0.0.10"
@@ -1930,10 +1930,10 @@ nanoid@^3.3.1:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.1.tgz#6347a18cac88af88f58af0b3594b723d5e99bb35"
   integrity sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==
 
-next-seo@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-5.3.0.tgz#35a8c3ebb9898fd2ac4c8208de360feed3756bf8"
-  integrity sha512-ofXUGGZ4l6j4oCxu6aecTWTkNbN/g+zbYUOvLRBKl96bJrt+WWyo4riRxQqqczvk1niGH4ibN7cCEwVjlYZs2g==
+next-seo@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-5.4.0.tgz#37a7784b30b3f70cec3fa0d77f9dde5990822d24"
+  integrity sha512-R9DhajPwJnR/lsF2hZ8cN8uqr5CVITsRrCG1AF5+ufcaybKYOvnH8sH9MaH4/hpkps3PQ9H71S7J7SPYixAYzQ==
 
 next@12.0.7:
   version "12.0.7"
@@ -2982,10 +2982,10 @@ type-fest@^0.8.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
-typescript@^4.6.3:
-  version "4.6.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
-  integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==
+typescript@^4.6.4:
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
+  integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
 
 unbox-primitive@^1.0.0:
   version "1.0.1"
