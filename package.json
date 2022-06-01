@@ -22,7 +22,7 @@
     "react-dom": "17.0.2",
     "react-schemaorg": "^2.0.0",
     "sass": "^1.51.0",
-    "use-debounce": "^7.0.1"
+    "use-debounce": "^8.0.1"
   },
   "devDependencies": {
     "@googlemaps/google-maps-services-js": "^3.3.13",
