@@ -15,7 +15,7 @@
     "@typeform/embed": "^1.35.1",
     "classnames": "^2.3.1",
     "google-map-react": "^2.1.10",
-    "next": "12.1.5",
+    "next": "12.1.6",
     "next-seo": "^5.4.0",
     "normalize.css": "^8.0.1",
     "react": "17.0.2",
