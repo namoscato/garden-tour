@@ -3,7 +3,7 @@ import * as gtag from "lib/gtag";
 import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
-import "node_modules/normalize.css/normalize.css";
+import "normalize.css/normalize.css";
 import { useEffect } from "react";
 import "styles/globals.scss";
 

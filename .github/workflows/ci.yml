@@ -14,5 +14,5 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "yarn"
       - uses: xt0rted/stylelint-problem-matcher@v1
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn test
