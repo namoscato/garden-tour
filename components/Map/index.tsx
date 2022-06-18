@@ -4,13 +4,7 @@ import GoogleMapReact, { Bounds, Coords } from "google-map-react";
 import { Garden } from "lib/gardensProvider/types";
 import Link from "next/link";
 import { TITLE } from "pages/_app";
-import React, {
-  SyntheticEvent,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
+import { SyntheticEvent, useEffect, useMemo, useRef, useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
 import {
   cardWidthFromWindowWidth,
@@ -63,7 +57,7 @@ export default function Map({ gardens }: Props) {
     return desktopBreakpoint(windowWidth) ? undefined : gardens[0]?.number;
   });
   useEffect(() => {
-    const garden = gardens.find((garden) => garden.number === activeGarden);
+    const garden = gardens.find(({ number }) => number === activeGarden);
 
     if (
       garden &&
@@ -72,7 +66,7 @@ export default function Map({ gardens }: Props) {
     ) {
       setCenter(garden.location);
     }
-  }, [activeGarden]);
+  }, [activeGarden, gardens, latLngBounds]);
 
   const handleChildClick = (key: string) => {
     const number = Number(key);

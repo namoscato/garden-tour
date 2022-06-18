@@ -1,8 +1,6 @@
-import { ChildComponentProps } from "google-map-react";
-import { Garden } from "lib/gardensProvider/types";
-import React from "react";
-import classes from "./GardenMarker.module.scss";
 import cn from "classnames";
+import { ChildComponentProps } from "google-map-react";
+import classes from "./GardenMarker.module.scss";
 
 interface Props extends ChildComponentProps {
   active: boolean;
