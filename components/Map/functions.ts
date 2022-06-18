@@ -36,7 +36,6 @@ export function mapOptionsFromWindowWidth(windowWidth: number): MapOptions {
 
   return {
     ...MAP_OPTIONS,
-    fullscreenControl: false,
     zoomControl: false,
   };
 }
