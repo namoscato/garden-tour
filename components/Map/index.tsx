@@ -2,6 +2,7 @@ import { useWindowWidth } from "@react-hook/window-size";
 import Dates from "components/Dates";
 import GoogleMapReact, { Bounds, Coords } from "google-map-react";
 import { Garden } from "lib/gardensProvider/types";
+import { sendEvent } from "lib/gtag";
 import Link from "next/link";
 import { TITLE } from "pages/_app";
 import { SyntheticEvent, useEffect, useMemo, useRef, useState } from "react";
@@ -61,6 +62,7 @@ export default function Map({ gardens }: Props) {
   const clickCurrentLocation = () => {
     getCurrentLocation();
     setActiveGarden(CURRENT_LOCATION_NUMBER);
+    sendEvent("click", "guide", "current location");
   };
 
   const [activeGarden, setActiveGarden] = useState<number | undefined>(() => {

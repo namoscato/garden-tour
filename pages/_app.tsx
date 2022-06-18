@@ -1,5 +1,5 @@
 import { useAbsoluteUrl } from "hooks/useAbsoluteUrl";
-import * as gtag from "lib/gtag";
+import { viewPage } from "lib/gtag";
 import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
@@ -17,14 +17,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const imageUrl = useAbsoluteUrl("/images/og-16x9.jpg");
 
   useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      gtag.pageView(url);
-    };
-
-    router.events.on("routeChangeComplete", handleRouteChange);
+    router.events.on("routeChangeComplete", viewPage);
 
     return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
+      router.events.off("routeChangeComplete", viewPage);
     };
   }, [router.events]);
 
