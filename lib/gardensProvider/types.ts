@@ -1,3 +1,5 @@
+import { Coords } from "google-map-react";
+
 export enum SheetColumn {
   Number = "Map Number",
   Address = "Address",
@@ -25,8 +27,5 @@ export interface Garden {
   address: string;
   description: string;
   participating: ParticipatingOption[];
-  location: {
-    lat: number;
-    lng: number;
-  };
+  location: Coords;
 }
