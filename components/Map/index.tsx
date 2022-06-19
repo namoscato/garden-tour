@@ -2,16 +2,12 @@ import { useWindowWidth } from "@react-hook/window-size";
 import Dates from "components/Dates";
 import GoogleMapReact, { Bounds, Coords } from "google-map-react";
 import { Garden } from "lib/gardensProvider/types";
+import { sendEvent } from "lib/gtag";
 import Link from "next/link";
 import { TITLE } from "pages/_app";
-import React, {
-  SyntheticEvent,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
+import { SyntheticEvent, useEffect, useMemo, useRef, useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
+import CurrentLocationButton from "./CurrentLocationButton";
 import {
   cardWidthFromWindowWidth,
   desktopBreakpoint,
@@ -20,7 +16,10 @@ import {
 } from "./functions";
 import GardenCard from "./GardenCard";
 import GardenMarker from "./GardenMarker";
+import { useCurrentLocation } from "./hooks";
 import classes from "./Map.module.scss";
+
+const CURRENT_LOCATION_NUMBER = -1;
 
 interface Props {
   gardens: Garden[];
@@ -59,20 +58,29 @@ export default function Map({ gardens }: Props) {
     return [0, 0, navigation.current?.clientHeight ?? 0, 0];
   }, [windowWidth]);
 
+  const { getCurrentLocation, currentLocation } = useCurrentLocation();
+  const clickCurrentLocation = () => {
+    getCurrentLocation();
+    setActiveGarden(CURRENT_LOCATION_NUMBER);
+    sendEvent("click", "guide", "current location");
+  };
+
   const [activeGarden, setActiveGarden] = useState<number | undefined>(() => {
     return desktopBreakpoint(windowWidth) ? undefined : gardens[0]?.number;
   });
   useEffect(() => {
-    const garden = gardens.find((garden) => garden.number === activeGarden);
+    const garden = gardens.find(({ number }) => number === activeGarden);
 
-    if (
+    if (CURRENT_LOCATION_NUMBER === activeGarden && currentLocation) {
+      setCenter(currentLocation);
+    } else if (
       garden &&
       latLngBounds &&
       !latLngBounds.contains(new google.maps.LatLng(garden.location))
     ) {
       setCenter(garden.location);
     }
-  }, [activeGarden]);
+  }, [activeGarden, currentLocation, gardens, latLngBounds]);
 
   const handleChildClick = (key: string) => {
     const number = Number(key);
@@ -120,6 +128,13 @@ export default function Map({ gardens }: Props) {
           onGoogleApiLoaded={initializeBounds}
           margin={margin}
         >
+          {currentLocation && (
+            <GardenMarker
+              {...currentLocation}
+              key={CURRENT_LOCATION_NUMBER}
+              current
+            />
+          )}
           {gardens.map((garden) => (
             <GardenMarker
               {...garden.location}
@@ -128,6 +143,10 @@ export default function Map({ gardens }: Props) {
             />
           ))}
         </GoogleMapReact>
+        <CurrentLocationButton
+          onClick={clickCurrentLocation}
+          active={!!currentLocation && CURRENT_LOCATION_NUMBER === activeGarden}
+        />
       </div>
       <div
         className={classes.navigation}

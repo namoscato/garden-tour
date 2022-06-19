@@ -17,7 +17,7 @@ export default function Register() {
     createWidget(REGISTER_TYPEFORM_ID, {
       container: typeformContainer.current,
     });
-  }, [typeformContainer.current]);
+  }, []);
 
   return (
     <Layout title="2022 Application">

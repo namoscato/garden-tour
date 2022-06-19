@@ -8,8 +8,8 @@ export default function Register() {
       <Content>
         <p>
           The Ken-Ton Garden Tour is one of the most anticipated events of the
-          summer in the Ken-Ton community. It's an annual celebration of color
-          that showcases the hard work and dedication of local gardeners.
+          summer in the Ken-Ton community. It&rsquo;s an annual celebration of
+          color that showcases the hard work and dedication of local gardeners.
         </p>
         <p>
           Rooted in humble beginnings, the Ken-Ton Garden Tour began in 2002,
@@ -17,9 +17,10 @@ export default function Register() {
           The program was originally envisioned as a small and simple activity
           in which Town and Village of Kenmore residents could nominate their
           choice for the most attractive and well-maintained commercial and
-          civic properties (i.e., "treasured spots" in our community). Nominated
-          properties would later be evaluated, and the top ten were designated
-          with a lawn sign during the first weekend in August.
+          civic properties (i.e., &ldquo;treasured spots&rdquo; in our
+          community). Nominated properties would later be evaluated, and the top
+          ten were designated with a lawn sign during the first weekend in
+          August.
         </p>
         <p>
           Despite the intended focus on commercial and civic properties, a July
@@ -28,7 +29,7 @@ export default function Register() {
         </p>
         <p>
           In a matter of days, volunteers logged several dozen phone calls from
-          eager residents boasting of their neighbors’ botanical
+          eager residents boasting of their neighbors&rsquo; botanical
           accomplishments.
         </p>
         <p>
@@ -37,17 +38,21 @@ export default function Register() {
           having just three weeks to pull it all together. This decision paved
           the way for what would become the second home garden tour in Western
           New York, next to{" "}
-          <a href="https://www.gardensbuffaloniagara.com/" target="_blank">
+          <a
+            href="https://www.gardensbuffaloniagara.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Garden Walk Buffalo
           </a>
           .
         </p>
         <p>
-          That first year, organizers chose to use the term "garden{" "}
-          <em>tour</em>" instead of "garden walk" to discourage garden
-          enthusiasts from attempting to walk the sometimes three mile distance
-          between participating gardens, which were scattered throughout the
-          Town.
+          That first year, organizers chose to use the term &ldquo;garden{" "}
+          <em>tour</em>&rdquo; instead of &ldquo;garden walk&rdquo; to
+          discourage garden enthusiasts from attempting to walk the sometimes
+          three mile distance between participating gardens, which were
+          scattered throughout the Town.
         </p>
         <p>
           The inaugural <em>Treasure Spots Garden Tour</em> took place as
@@ -63,22 +68,22 @@ export default function Register() {
           and matured, drawing larger crowds and visitors from as far as
           Pennsylvania, Ohio, Ontario, and beyond. As notoriety grew, so too did
           the number of participating gardeners and the prevalence of tacky
-          newspaper headlines (e.g., "Landscaping contest yields a bounty of
-          'treasure spots'").
+          newspaper headlines (e.g., &ldquo;Landscaping contest yields a bounty
+          of &lsquo;treasure spots&rsquo;&rdquo;).
         </p>
         <p>
           After the third year, significant improvements came to the{" "}
           <em>Treasure Spots Program</em>. The name of the Program was changed
           to the <em>Ken-Ton Garden Tour</em> to better reflect the geographic
           and community-centric context of the annual gardening event. Also, the
-          practice of "nominating" gardens for inclusion in the tour was dropped
-          in lieu of a more practical registration process. The new process
-          welcomed any and all gardeners in the Village of Kenmore and Town of
-          Tonawanda to personally register their home garden as a destination on
-          the Ken-Ton Garden Tour. Registrants received a lawn sign for display
-          purposes during the event, and their address and a description of
-          their garden were included in a guidebook distributed throughout the
-          community.
+          practice of &ldquo;nominating&rdquo; gardens for inclusion in the tour
+          was dropped in lieu of a more practical registration process. The new
+          process welcomed any and all gardeners in the Village of Kenmore and
+          Town of Tonawanda to personally register their home garden as a
+          destination on the Ken-Ton Garden Tour. Registrants received a lawn
+          sign for display purposes during the event, and their address and a
+          description of their garden were included in a guidebook distributed
+          throughout the community.
         </p>
         <p>
           Beginning in 2011, the date of the Ken-Ton Garden Tour shifted from
@@ -86,7 +91,11 @@ export default function Register() {
           date change came at the request of gardeners, since they believed
           their flowers were in a peak bloom state. Additionally, this was a way
           for the Tour to join the{" "}
-          <a href="https://www.gardensbuffaloniagara.com/" target="_blank">
+          <a
+            href="https://www.gardensbuffaloniagara.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Gardens Buffalo Niagara
           </a>
           , a five-week celebration of gardening in Western New York. We are
