@@ -2,7 +2,7 @@
 
 .root {
   left: 0;
-  margin: 10px;
+  margin: 0.7rem;
   position: absolute;
   top: 0;
 
@@ -19,8 +19,8 @@
   box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   display: flex;
-  height: 40px;
-  padding: 0 12px;
+  height: 2.5rem;
+  padding: 0 0.75em;
 }
 
 .buttonCaret {
