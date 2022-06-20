@@ -40,7 +40,6 @@ export default function ParticipationFilterMenu({ value, onChange }: Props) {
             className={classes.menuItem}
             checked={value.get(option)}
             onClick={(event) => {
-              event.keepOpen = true;
               onChange(
                 new Map([
                   ...Array.from(value.entries()),
