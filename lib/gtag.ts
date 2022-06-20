@@ -9,7 +9,7 @@ export function viewPage(url: string): void {
 
 /** @see https://developers.google.com/analytics/devguides/collection/gtagjs/events */
 export function sendEvent(
-  action: "click",
+  action: string,
   category: string,
   label: string
 ): void {

@@ -349,6 +349,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@szhsin/react-menu@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@szhsin/react-menu@npm:3.1.0"
+  dependencies:
+    prop-types: ^15.7.2
+    react-transition-state: ^1.1.4
+  peerDependencies:
+    react: ">=16.14.0"
+    react-dom: ">=16.14.0"
+  checksum: 66a6c8012e9afe7a45826c487e9451474e06d8d583876751325eda910241ffcd6ae5a519ad4d527331920c15790d36d8b8ff2f60bd09f097046e3675fbd9af01
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -397,6 +410,13 @@ __metadata:
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
   checksum: e60b153664572116dfea673c5bda7778dbff150498f44f998e34b5886d8afc47f16799280e4b6e241c0472aef1bc36add771c569c68fc5125fc2ae519a3eb9ac
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:^4.14.182":
+  version: 4.14.182
+  resolution: "@types/lodash@npm:4.14.182"
+  checksum: 7dd137aa9dbabd632408bd37009d984655164fa1ecc3f2b6eb94afe35bf0a5852cbab6183148d883e9c73a958b7fec9a9bcf7c8e45d41195add6a18c34958209
   languageName: node
   linkType: hard
 
@@ -1895,11 +1915,13 @@ __metadata:
   dependencies:
     "@googlemaps/google-maps-services-js": ^3.3.14
     "@react-hook/window-size": ^3.0.7
+    "@szhsin/react-menu": ^3.1.0
     "@typeform/embed": ^1.35.1
     "@types/google-map-react": ^2.1.7
     "@types/google-spreadsheet": ^3.2.2
     "@types/google.maps": ^3.49.1
     "@types/gtag.js": ^0.0.10
+    "@types/lodash": ^4.14.182
     "@types/node": ^14.18.16
     "@types/react": ^17.0.44
     classnames: ^2.3.1
@@ -1907,6 +1929,7 @@ __metadata:
     eslint-config-next: 12.1.6
     google-map-react: ^2.1.10
     google-spreadsheet: ^3.3.0
+    lodash: ^4.17.21
     next: 12.1.6
     next-seo: ^5.4.0
     normalize.css: ^8.0.1
@@ -3751,6 +3774,16 @@ __metadata:
     schema-dts: ">=0.7.4"
     typescript: ">=3.1.6"
   checksum: b22b1f2d1f93ac6a19361fad2a1ff8b122a67e2ed29149c89c25c4d260a73abe0fe4054521987aed519ae13e9b2e518c4f0954760019fd2315c30a78ce38fb3e
+  languageName: node
+  linkType: hard
+
+"react-transition-state@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "react-transition-state@npm:1.1.4"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 510e3e03ab684c02ad9e084103dae5c86421a6ba4ce532a0de13e121513717ee139e9c3c5c760fd4c3f24720bec2e5624219ef68e75cf4a443f19ef648c9aa71
   languageName: node
   linkType: hard
 

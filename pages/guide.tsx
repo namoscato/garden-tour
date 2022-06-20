@@ -1,9 +1,8 @@
-import Map from "components/Map";
+import GardenMap from "components/GardenMap";
 import { fetchGardens } from "lib/gardensProvider";
 import { Garden } from "lib/gardensProvider/types";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { NextSeo } from "next-seo";
-import React from "react";
 
 interface Props {
   gardens: Garden[];
@@ -23,7 +22,7 @@ export default function Guide({
   return (
     <>
       <NextSeo title="Guide" />
-      <Map gardens={gardens} />
+      <GardenMap gardens={gardens} />
     </>
   );
 }
