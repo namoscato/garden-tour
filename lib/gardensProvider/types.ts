@@ -6,26 +6,26 @@ export enum SheetColumn {
   FormattedAddress = "Full Address",
   Lat = "Latitude",
   Lng = "Longitude",
-  ParticipatingFridayNight = "Friday Night",
-  ParticipatingSaturdayDay = "Saturday Day",
-  ParticipatingSaturdayNight = "Saturday Night",
-  ParticipatingSundayDay = "Sunday Day",
+  ParticipationFridayNight = "Friday Night",
+  ParticipationSaturdayDay = "Saturday Day",
+  ParticipationSaturdayNight = "Saturday Night",
+  ParticipationSundayDay = "Sunday Day",
   Description = "Description",
 }
 
-export const PARTICIPATING_OPTIONS = [
-  SheetColumn.ParticipatingFridayNight,
-  SheetColumn.ParticipatingSaturdayDay,
-  SheetColumn.ParticipatingSaturdayNight,
-  SheetColumn.ParticipatingSundayDay,
+export const PARTICIPATION_OPTIONS = [
+  SheetColumn.ParticipationFridayNight,
+  SheetColumn.ParticipationSaturdayDay,
+  SheetColumn.ParticipationSaturdayNight,
+  SheetColumn.ParticipationSundayDay,
 ] as const;
 
-export type ParticipatingOption = typeof PARTICIPATING_OPTIONS[number];
+export type ParticipationOption = typeof PARTICIPATION_OPTIONS[number];
 
 export interface Garden {
   number: number;
   address: string;
   description: string;
-  participating: ParticipatingOption[];
+  participation: ParticipationOption[];
   location: Coords;
 }

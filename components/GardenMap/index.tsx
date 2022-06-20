@@ -1,7 +1,7 @@
 import { useWindowWidth } from "@react-hook/window-size";
 import Dates from "components/Dates";
 import GoogleMapReact, { Bounds, Coords } from "google-map-react";
-import { Garden } from "lib/gardensProvider/types";
+import { Garden, ParticipationOption } from "lib/gardensProvider/types";
 import { sendEvent } from "lib/gtag";
 import Link from "next/link";
 import { TITLE } from "pages/_app";
@@ -15,9 +15,10 @@ import {
   mapPropsFromWindowWidth,
 } from "./functions";
 import GardenCard from "./GardenCard";
+import classes from "./GardenMap.module.scss";
 import GardenMarker from "./GardenMarker";
 import { useCurrentLocation } from "./hooks";
-import classes from "./Map.module.scss";
+import ParticipationFilterMenu from "./ParticipationFilterMenu";
 
 const CURRENT_LOCATION_NUMBER = -1;
 
@@ -25,7 +26,7 @@ interface Props {
   gardens: Garden[];
 }
 
-export default function Map({ gardens }: Props) {
+export default function GardenMap(props: Props) {
   const navigation = useRef<HTMLDivElement | null>(null);
   const gardenItems = useRef<Record<number, HTMLLIElement | null>>({});
 
@@ -64,6 +65,22 @@ export default function Map({ gardens }: Props) {
     setActiveGarden(CURRENT_LOCATION_NUMBER);
     sendEvent("click", "guide", "current location");
   };
+
+  const [participationFilter, setParticipationFilter] = useState<
+    Map<ParticipationOption, boolean>
+  >(new Map());
+  const gardens = useMemo<Garden[]>(() => {
+    const checkedParticipation = Array.from(participationFilter.entries())
+      .filter(([, checked]) => checked)
+      .map(([participation]) => participation);
+
+    return props.gardens.filter(({ participation }) => {
+      return (
+        0 === checkedParticipation.length ||
+        checkedParticipation.some((value) => participation.includes(value))
+      );
+    });
+  }, [participationFilter, props.gardens]);
 
   const [activeGarden, setActiveGarden] = useState<number | undefined>(() => {
     return desktopBreakpoint(windowWidth) ? undefined : gardens[0]?.number;
@@ -143,6 +160,10 @@ export default function Map({ gardens }: Props) {
             />
           ))}
         </GoogleMapReact>
+        <ParticipationFilterMenu
+          value={participationFilter}
+          onChange={setParticipationFilter}
+        />
         <CurrentLocationButton
           onClick={clickCurrentLocation}
           active={!!currentLocation && CURRENT_LOCATION_NUMBER === activeGarden}

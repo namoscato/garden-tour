@@ -1,11 +1,11 @@
 import cn from "classnames";
 import Content from "components/Content";
 import Dates from "components/Dates";
+import { YEAR } from "components/Dates/constants";
 import Layout from "components/Layout";
 import { useAbsoluteUrl } from "hooks/useAbsoluteUrl";
 import Head from "next/head";
 import Link from "next/link";
-import React from "react";
 import { jsonLdScriptProps } from "react-schemaorg";
 import { Event } from "schema-dts";
 import classes from "./Home.module.scss";
@@ -49,7 +49,7 @@ export default function Home() {
       </Head>
       <Content>
         <div className={classes.root}>
-          <h1 className="title">2022 Garden Tour</h1>
+          <h1 className="title">{YEAR} Garden Tour</h1>
           <Dates />
           <div className={classes.callToAction}>
             <Link href="/register">

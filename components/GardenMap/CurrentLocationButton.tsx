@@ -8,7 +8,12 @@ interface Props {
 
 export default function CurrentLocationButton({ onClick, active }: Props) {
   return (
-    <button onClick={onClick} className={classes.root} type="button">
+    <button
+      onClick={onClick}
+      className={classes.root}
+      type="button"
+      title="Show Your Location"
+    >
       <svg
         className={cn(classes.svg, { [classes.svgActive]: active })}
         xmlns="http://www.w3.org/2000/svg"

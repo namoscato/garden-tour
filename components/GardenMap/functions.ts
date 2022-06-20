@@ -1,5 +1,5 @@
 import { MapOptions, Props } from "google-map-react";
-import { ParticipatingOption, SheetColumn } from "lib/gardensProvider/types";
+import { ParticipationOption, SheetColumn } from "lib/gardensProvider/types";
 import { BREAKPOINT_DESKTOP, MAP_OPTIONS } from "./constants";
 
 export function cardWidthFromWindowWidth(windowWidth: number): number {
@@ -40,17 +40,17 @@ export function mapOptionsFromWindowWidth(windowWidth: number): MapOptions {
   };
 }
 
-export function labelFromParticipatingOption(
-  option: ParticipatingOption
+export function labelFromParticipationOption(
+  option: ParticipationOption
 ): string {
   switch (option) {
-    case SheetColumn.ParticipatingFridayNight:
+    case SheetColumn.ParticipationFridayNight:
       return "Friday Night";
-    case SheetColumn.ParticipatingSaturdayDay:
+    case SheetColumn.ParticipationSaturdayDay:
       return "Saturday";
-    case SheetColumn.ParticipatingSaturdayNight:
+    case SheetColumn.ParticipationSaturdayNight:
       return "Saturday Night";
-    case SheetColumn.ParticipatingSundayDay:
+    case SheetColumn.ParticipationSundayDay:
       return "Sunday";
     default:
       return assertNever(option);

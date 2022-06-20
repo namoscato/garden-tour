@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+
+.root {
+  left: 0;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+
+  &:hover .svg {
+    opacity: 1;
+  }
+}
+
+.button {
+  align-items: center;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  padding: 0 12px;
+}
+
+.buttonCaret {
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  border-top: 0.3em solid $color-gray;
+  height: 0;
+  margin-left: 0.4em;
+  width: 0;
+}
+
+.buttonCaretOpen {
+  border-bottom: 0.3em solid $color-gray;
+  border-top: 0;
+}
+
+.menuItemSubtitle {
+  color: $color-gray;
+  font-size: 0.85em;
+  margin-left: 0.5em;
+}
