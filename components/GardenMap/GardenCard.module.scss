@@ -8,10 +8,6 @@
   cursor: pointer;
   height: 100%;
   padding: 1rem 1.5rem 1.5rem;
-
-  &:hover {
-    background-color: $color-gray-light;
-  }
 }
 
 .title {
@@ -44,6 +40,10 @@
   .root {
     border-radius: 0;
     box-shadow: none;
+
+    &:hover {
+      background-color: $color-gray-light;
+    }
   }
 
   .active {
