@@ -6,7 +6,7 @@ import {
   ParticipationOption,
   PARTICIPATION_OPTIONS,
 } from "lib/gardensProvider/types";
-import { uniq } from "lodash";
+import { sendEvent } from "lib/gtag";
 import { labelFromParticipationOption } from "../functions";
 import { useDayLabel } from "./hooks";
 import classes from "./ParticipationFilterMenu.module.scss";
@@ -47,6 +47,10 @@ export default function ParticipationFilterMenu({ value, onChange }: Props) {
                   [option, Boolean(event.checked)],
                 ])
               );
+
+              if (event.checked) {
+                sendEvent("filter", "guide", option);
+              }
             }}
           >
             {labelFromParticipationOption(option)}
