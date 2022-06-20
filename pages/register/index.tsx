@@ -1,5 +1,6 @@
 import { createWidget } from "@typeform/embed";
 import "@typeform/embed/build/css/widget.css";
+import { YEAR } from "components/Dates/constants";
 import Layout from "components/Layout";
 import { useEffect, useRef } from "react";
 import classes from "./Register.module.scss";
@@ -20,7 +21,7 @@ export default function Register() {
   }, []);
 
   return (
-    <Layout title="2022 Application">
+    <Layout title={`${YEAR} Application`}>
       <div className={classes.root} ref={typeformContainer} />
     </Layout>
   );

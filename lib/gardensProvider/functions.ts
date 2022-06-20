@@ -4,7 +4,7 @@ import {
   GoogleSpreadsheetWorksheet,
 } from "google-spreadsheet";
 import { POSTAL_CODES } from "./constants";
-import { Garden, PARTICIPATING_OPTIONS, SheetColumn } from "./types";
+import { Garden, PARTICIPATION_OPTIONS, SheetColumn } from "./types";
 
 export async function geocodedRowsFromSheet(
   sheet: GoogleSpreadsheetWorksheet
@@ -70,7 +70,7 @@ export function gardenFromRow(row: GoogleSpreadsheetRow): Garden {
     number: Number(row[SheetColumn.Number]),
     address: row[SheetColumn.Address],
     description: row[SheetColumn.Description],
-    participating: PARTICIPATING_OPTIONS.filter((option) => row[option]),
+    participation: PARTICIPATION_OPTIONS.filter((option) => row[option]),
     location: {
       lat: Number(row[SheetColumn.Lat]),
       lng: Number(row[SheetColumn.Lng]),

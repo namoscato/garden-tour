@@ -2,7 +2,7 @@ import { Garden } from "lib/gardensProvider/types";
 import React from "react";
 import classes from "./GardenCard.module.scss";
 import cn from "classnames";
-import { labelFromParticipatingOption } from "./functions";
+import { labelFromParticipationOption } from "./functions";
 
 interface Props {
   garden: Garden;
@@ -21,8 +21,8 @@ export default function GardenCard({ garden, active, onClick }: Props) {
         <span>{garden.address}</span>
       </h1>
       <p>{garden.description}</p>
-      <p className={classes.participating}>
-        {garden.participating.map(labelFromParticipatingOption).join(" ∙ ")}
+      <p className={classes.participation}>
+        {garden.participation.map(labelFromParticipationOption).join(" ∙ ")}
       </p>
     </div>
   );
