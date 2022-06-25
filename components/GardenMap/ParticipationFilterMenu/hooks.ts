@@ -7,8 +7,10 @@ import { uniq } from "lodash";
 import { useMemo } from "react";
 import { labelFromDays } from "./functions";
 
-const FULL_DAYS = PARTICIPATION_OPTIONS.map<number>(
-  (participation) => PARTICIPATION_DATE[participation].day
+const FULL_DAYS = uniq(
+  PARTICIPATION_OPTIONS.map<number>(
+    (participation) => PARTICIPATION_DATE[participation].day
+  )
 );
 
 export function useDayLabel(
