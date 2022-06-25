@@ -11,10 +11,10 @@ export function desktopBreakpoint(windowWidth: number): boolean {
 }
 
 export function mapPropsFromWindowWidth(windowWidth: number): Props {
-  let lat = 42.9684587;
+  let lat = 42.9665;
 
   if (desktopBreakpoint(windowWidth)) {
-    lat += 0.01;
+    lat += 0.015;
   }
 
   return {
