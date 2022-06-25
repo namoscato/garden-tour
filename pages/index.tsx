@@ -52,12 +52,21 @@ export default function Home() {
           <h1 className="title">{YEAR} Garden Tour</h1>
           <Dates />
           <div className={classes.callToAction}>
-            <Link href="/register">
+            <Link href="/guide">
               <a className={cn("button", classes.callToActionButton)}>
-                Register
+                View Guide
               </a>
             </Link>
-            by June 3
+            <span>
+              or{" "}
+              <a
+                href="/files/2022%20Garden%20Tour%20Map.pdf"
+                target="_blank"
+                download
+              >
+                Download
+              </a>
+            </span>
           </div>
           <h1 className="title">About</h1>
           <p>
