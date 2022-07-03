@@ -38,14 +38,13 @@ export default function GardenMap(props: Props) {
   );
 
   const [marginBounds, setMarginBounds] = useState<Bounds>();
-  const [latLngBounds, setLatLngBounds] = useState<google.maps.LatLngBounds>();
+  const latLngBounds = useRef<google.maps.LatLngBounds>();
+
   const initializeBounds = () => {
     if (marginBounds && undefined !== window.google) {
-      setLatLngBounds(
-        new google.maps.LatLngBounds(
-          new google.maps.LatLng(marginBounds.sw),
-          new google.maps.LatLng(marginBounds.ne)
-        )
+      latLngBounds.current = new google.maps.LatLngBounds(
+        new google.maps.LatLng(marginBounds.sw),
+        new google.maps.LatLng(marginBounds.ne)
       );
     }
   };
@@ -92,12 +91,12 @@ export default function GardenMap(props: Props) {
       setCenter(currentLocation);
     } else if (
       garden &&
-      latLngBounds &&
-      !latLngBounds.contains(new google.maps.LatLng(garden.location))
+      latLngBounds.current &&
+      !latLngBounds.current.contains(new google.maps.LatLng(garden.location))
     ) {
       setCenter(garden.location);
     }
-  }, [activeGarden, currentLocation, gardens, latLngBounds]);
+  }, [activeGarden, currentLocation, gardens]);
 
   const handleChildClick = (key: string) => {
     const number = Number(key);
