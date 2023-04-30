@@ -52,10 +52,10 @@ export default function Home() {
           <h1 className="title">{YEAR} Garden Tour</h1>
           <Dates />
           <div className={classes.callToAction}>
-            <Link href="/guide">
-              <a className={cn("button", classes.callToActionButton)}>
+            <Link href="/guide" className={cn("button", classes.callToActionButton)}>
+              
                 View Guide
-              </a>
+              
             </Link>
             <span>
               or{" "}
@@ -76,7 +76,7 @@ export default function Home() {
             time goes on, the Ken-Ton Garden Tour continues to engender a sense
             of civic pride.{" "}
             <Link href="/about">
-              <a>Read more</a>
+              Read more
             </Link>
             .
           </p>

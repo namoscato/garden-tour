@@ -17,10 +17,8 @@ export default function Layout({ children, title }: Props) {
       <div className={classes.root}>
         <div className={classes.image}></div>
         <header className={classes.header}>
-          <Link href="/">
-            <a className={classes.logo} title="Home">
-              <Logo />
-            </a>
+          <Link href="/" className={classes.logo} title="Home">
+            <Logo />
           </Link>
           <div>
             <nav className={classes.nav}>
