@@ -404,10 +404,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typeform/embed@npm:^1.35.1":
-  version: 1.35.1
-  resolution: "@typeform/embed@npm:1.35.1"
-  checksum: 493b666381881eabff6cb207dd5cd57c6f6c239c14b135186aa0c711ddf2e947f70f1b2e0cb241bb02396b2120bba1356960a1941a3c19256d44219bc4e3297a
+"@typeform/embed@npm:^2.10.0":
+  version: 2.10.0
+  resolution: "@typeform/embed@npm:2.10.0"
+  checksum: d3ffb5781757e380fc0d5b02a2d3a69dc2ce9d6732c800fee1ee4ec2af0db9d253515276083abb050b46b4ac3cbdba5d7ba613d1ab9667aa78bc86291e44f515
   languageName: node
   linkType: hard
 
@@ -1948,7 +1948,7 @@ __metadata:
     "@googlemaps/google-maps-services-js": ^3.3.14
     "@react-hook/window-size": ^3.0.7
     "@szhsin/react-menu": ^3.1.0
-    "@typeform/embed": ^1.35.1
+    "@typeform/embed": ^2.10.0
     "@types/google-map-react": ^2.1.7
     "@types/google-spreadsheet": ^3.2.2
     "@types/google.maps": ^3.49.1
