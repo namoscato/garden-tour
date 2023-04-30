@@ -8,8 +8,8 @@ export default function Custom404() {
     <Layout title="Page Not Found">
       <Content>
         <p>Sorry, the page could not be found.</p>
-        <Link href="/">
-          <a className="button">Return Home</a>
+        <Link href="/" className="button">
+          Return Home
         </Link>
       </Content>
     </Layout>

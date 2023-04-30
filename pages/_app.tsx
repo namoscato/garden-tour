@@ -2,10 +2,13 @@ import { useAbsoluteUrl } from "hooks/useAbsoluteUrl";
 import { viewPage } from "lib/gtag";
 import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/app";
+import { Nunito } from "next/font/google";
 import { useRouter } from "next/router";
 import "normalize.css/normalize.css";
 import { useEffect } from "react";
 import "styles/globals.scss";
+
+const nunito = Nunito({ subsets: ["latin"] });
 
 export const TITLE = "Ken-Ton Garden Tour";
 export const DESCRIPTION =
@@ -83,6 +86,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           },
         ]}
       />
+      <style jsx global>{`
+        body {
+          font-family: ${nunito.style.fontFamily};
+        }
+      `}</style>
       <Component {...pageProps} />
     </>
   );
