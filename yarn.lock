@@ -443,16 +443,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@szhsin/react-menu@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@szhsin/react-menu@npm:3.1.0"
+"@szhsin/react-menu@npm:^3.5.3":
+  version: 3.5.3
+  resolution: "@szhsin/react-menu@npm:3.5.3"
   dependencies:
     prop-types: ^15.7.2
-    react-transition-state: ^1.1.4
+    react-transition-state: ^1.1.5
   peerDependencies:
     react: ">=16.14.0"
     react-dom: ">=16.14.0"
-  checksum: 66a6c8012e9afe7a45826c487e9451474e06d8d583876751325eda910241ffcd6ae5a519ad4d527331920c15790d36d8b8ff2f60bd09f097046e3675fbd9af01
+  checksum: cc87b5dc3e8141185f8b8afb798b0ac0af61748a9ec667caca520d1731ee0711238cce14991918f44169a50746e6469332a2b58667a8187cc8b3dbf316ff7370
   languageName: node
   linkType: hard
 
@@ -2000,7 +2000,7 @@ __metadata:
   dependencies:
     "@googlemaps/google-maps-services-js": ^3.3.29
     "@react-hook/window-size": ^3.1.1
-    "@szhsin/react-menu": ^3.1.0
+    "@szhsin/react-menu": ^3.5.3
     "@typeform/embed": ^2.10.0
     "@types/google-map-react": ^2.1.7
     "@types/google-spreadsheet": ^3.3.1
@@ -3927,13 +3927,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-transition-state@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "react-transition-state@npm:1.1.4"
+"react-transition-state@npm:^1.1.5":
+  version: 1.1.5
+  resolution: "react-transition-state@npm:1.1.5"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 510e3e03ab684c02ad9e084103dae5c86421a6ba4ce532a0de13e121513717ee139e9c3c5c760fd4c3f24720bec2e5624219ef68e75cf4a443f19ef648c9aa71
+  checksum: 4ca616583cd12825706be94886cf1512e0995170709435971787c7d5adf3d95d6349df17f45d74e805453e338a220e2ebe1b54a5d696bcad4617a71e24e02c59
   languageName: node
   linkType: hard
 
