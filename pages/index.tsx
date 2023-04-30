@@ -52,10 +52,11 @@ export default function Home() {
           <h1 className="title">{YEAR} Garden Tour</h1>
           <Dates />
           <div className={classes.callToAction}>
-            <Link href="/guide" className={cn("button", classes.callToActionButton)}>
-              
-                View Guide
-              
+            <Link
+              href="/guide"
+              className={cn("button", classes.callToActionButton)}
+            >
+              View Guide
             </Link>
             <span>
               or{" "}
@@ -74,11 +75,7 @@ export default function Home() {
             summer in the Ken-Ton community. It’s an annual celebration of color
             that showcases the hard work and dedication of local gardeners. As
             time goes on, the Ken-Ton Garden Tour continues to engender a sense
-            of civic pride.{" "}
-            <Link href="/about">
-              Read more
-            </Link>
-            .
+            of civic pride. <Link href="/about">Read more</Link>.
           </p>
         </div>
       </Content>
