@@ -7,7 +7,7 @@ import { useAbsoluteUrl } from "hooks/useAbsoluteUrl";
 import Head from "next/head";
 import Link from "next/link";
 import { jsonLdScriptProps } from "react-schemaorg";
-import { Event } from "schema-dts";
+import type { Event } from "schema-dts";
 import classes from "./Home.module.scss";
 import { DESCRIPTION, TITLE } from "./_app";
 
