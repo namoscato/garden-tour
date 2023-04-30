@@ -20,7 +20,7 @@ export const PARTICIPATION_OPTIONS = [
   SheetColumn.ParticipationSundayDay,
 ] as const;
 
-export type ParticipationOption = typeof PARTICIPATION_OPTIONS[number];
+export type ParticipationOption = (typeof PARTICIPATION_OPTIONS)[number];
 
 export interface Garden {
   number: number;
