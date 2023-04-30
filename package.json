@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint && yarn tsc && stylelint \"**/*.scss\"",
     "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
     "test": "yarn lint && yarn prettier"
   },
   "dependencies": {
