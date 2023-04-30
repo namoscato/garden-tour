@@ -1,3 +1,4 @@
+@use "sass:color";
 @import "variables";
 
 /* stylelint-disable-next-line selector-max-id */
@@ -28,11 +29,11 @@ body {
 
   &:hover,
   &:focus {
-    background-color: lighten($color-blue, 5%);
+    background-color: color.adjust($color-blue, $lightness: 5%);
   }
 
   &:active {
-    background-color: darken($color-blue, 5%);
+    background-color: color.adjust($color-blue, $lightness: -5%);
   }
 }
 
