@@ -544,7 +544,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.44":
+"@types/react@npm:*":
   version: 17.0.44
   resolution: "@types/react@npm:17.0.44"
   dependencies:
@@ -552,6 +552,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: ebee02778ca08f954c316dc907802264e0121c87b8fa2e7e0156ab0ef2a1b0a09d968c016a3600ec4c9a17dc09b4274f292d9b15a1a5369bb7e4072def82808f
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^17.0.58":
+  version: 17.0.58
+  resolution: "@types/react@npm:17.0.58"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 4eaf32b86c43f388c681e34a00921c508dd88a1d1022aebfadc5fe802b7c5bed863de1a17eed31e43ca2d65222952dfe79a022055a0e6e4e1ad89fc5a42ec05e
   languageName: node
   linkType: hard
 
@@ -2163,7 +2174,7 @@ __metadata:
     "@types/gtag.js": ^0.0.12
     "@types/lodash": ^4.14.194
     "@types/node": ^18.16.3
-    "@types/react": ^17.0.44
+    "@types/react": ^17.0.58
     classnames: ^2.3.2
     eslint: 8.39.0
     eslint-config-next: ^13.3.2
