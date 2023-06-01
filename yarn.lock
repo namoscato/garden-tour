@@ -148,12 +148,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@googlemaps/js-api-loader@npm:^1.7.0":
-  version: 1.12.1
-  resolution: "@googlemaps/js-api-loader@npm:1.12.1"
+"@googlemaps/js-api-loader@npm:^1.13.8":
+  version: 1.15.2
+  resolution: "@googlemaps/js-api-loader@npm:1.15.2"
   dependencies:
     fast-deep-equal: ^3.1.3
-  checksum: 43b4ebdf3b06e0904ad69a2cd66c6e298f75fcc9286ee65cfb5b479d90f5ea21b77af296172fd61c72828081b17a2a8e795441446d086469867dfbb894db7f7b
+  checksum: a191da355e33d4a2665261fe6ffe50257943b1f171b475447554d7f5631e604449e00c235040be33b1555a9401f5b79feb333048907b5398a30d1341f325e0f1
   languageName: node
   linkType: hard
 
@@ -2167,7 +2167,7 @@ __metadata:
     classnames: ^2.3.2
     eslint: 8.39.0
     eslint-config-next: ^13.3.2
-    google-map-react: ^2.2.0
+    google-map-react: ^2.2.1
     google-spreadsheet: ^3.3.0
     lodash: ^4.17.21
     next: ^13.3.2
@@ -2442,18 +2442,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-map-react@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "google-map-react@npm:2.2.0"
+"google-map-react@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "google-map-react@npm:2.2.1"
   dependencies:
-    "@googlemaps/js-api-loader": ^1.7.0
+    "@googlemaps/js-api-loader": ^1.13.8
     "@mapbox/point-geometry": ^0.1.0
     eventemitter3: ^4.0.4
     prop-types: ^15.7.2
   peerDependencies:
     react: ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 4fe4155e2eebf0747f55bd9982fbab12a35b01afe69b8348834bc6eaf1e608d589c38f9cd5dff0f9bf7448d6e55c3fcfa7ecd0b62706606f1c497cd5211714f4
+  checksum: 6bc082581c44ffe1e048766849308bc078ebe0a695b485d284ded9783fa4ffd9ddc4d62597fa11379fe667f17a54a2e2f6ade8e2eda78299959fe81551563a14
   languageName: node
   linkType: hard
 
