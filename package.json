@@ -40,7 +40,7 @@
     "@types/react": "^18.2.0",
     "eslint": "8.39.0",
     "eslint-config-next": "^13.3.2",
-    "postcss": "^8.4.23",
+    "postcss": "^8.4.24",
     "prettier": "2.8.8",
     "schema-dts": "^1.1.2",
     "stylelint": "^15.6.0",
