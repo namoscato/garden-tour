@@ -135,16 +135,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@googlemaps/google-maps-services-js@npm:^3.3.29":
-  version: 3.3.29
-  resolution: "@googlemaps/google-maps-services-js@npm:3.3.29"
+"@googlemaps/google-maps-services-js@npm:^3.3.31":
+  version: 3.3.31
+  resolution: "@googlemaps/google-maps-services-js@npm:3.3.31"
   dependencies:
     "@googlemaps/url-signature": ^1.0.4
     agentkeepalive: ^4.1.0
     axios: ^0.27.2
     query-string: ^7.1.3
     retry-axios: ^2.6.0
-  checksum: 373a938581793c7a890720cc7bf95248830f69293a845032cc1ddf0e237c260d9d23ed588ba71b77cee408bfddca1c0f619767ee2c13e9bafd1a692dfbbf2cc9
+  checksum: 8e7287e796601623ed3806d09ba94e7174a91eb8a402d4a676cd34c61bb27b943d1f9e8961f95817c3e3014bd45c8e4beccd75ce3e1f6f09240ede07f8efa2a8
   languageName: node
   linkType: hard
 
@@ -2153,7 +2153,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "garden-tour@workspace:."
   dependencies:
-    "@googlemaps/google-maps-services-js": ^3.3.29
+    "@googlemaps/google-maps-services-js": ^3.3.31
     "@react-hook/window-size": ^3.1.1
     "@szhsin/react-menu": ^3.5.3
     "@typeform/embed": ^2.10.0
