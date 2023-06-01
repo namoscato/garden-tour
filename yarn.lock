@@ -481,10 +481,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/google-spreadsheet@npm:^3.3.1":
-  version: 3.3.1
-  resolution: "@types/google-spreadsheet@npm:3.3.1"
-  checksum: 339ac0510dbf2eea973348016e0c0c9bda4bee526aaf69b68a77d2206bb84365879a8eefdb8f48407b2842ae197abbe6d41e39eb798b48353133120815b2fd00
+"@types/google-spreadsheet@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "@types/google-spreadsheet@npm:3.3.2"
+  checksum: 6db5517e96541bade09235808298bd2b557de7d45ee730629fa4b669aea11da74d185b483de5c0b4d29f2df43581f2af978198d73e6defa28f2a32f6f2cb28f7
   languageName: node
   linkType: hard
 
@@ -2158,7 +2158,7 @@ __metadata:
     "@szhsin/react-menu": ^3.5.3
     "@typeform/embed": ^2.10.0
     "@types/google-map-react": ^2.1.7
-    "@types/google-spreadsheet": ^3.3.1
+    "@types/google-spreadsheet": ^3.3.2
     "@types/google.maps": ^3.52.6
     "@types/gtag.js": ^0.0.12
     "@types/lodash": ^4.14.194
