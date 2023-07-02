@@ -7,10 +7,10 @@
 
 .navigation {
   overflow-x: auto;
-  padding: 1.5rem 0.5rem 0.5rem;
+  padding: 1.5rem 0.5rem 0;
   scroll-padding: 5vw;
   scroll-snap-type: x mandatory;
-  transform: translateY(-100%);
+  transform: translateY(calc(-100% + 1rem));
   z-index: 1;
 }
 
