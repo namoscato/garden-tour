@@ -26,7 +26,7 @@ interface Props {
   gardens: Garden[];
 }
 
-export default function GardenMap(props: Props) {
+export function GardenMap(props: Props) {
   const navigation = useRef<HTMLDivElement | null>(null);
   const gardenItems = useRef<Record<number, HTMLLIElement | null>>({});
 
