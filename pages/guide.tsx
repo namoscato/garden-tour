@@ -1,4 +1,4 @@
-import { GardenMap } from "components/GardenMap";
+import GardenMap from "components/GardenMap";
 import { fetchGardens } from "lib/gardensProvider";
 import { Garden } from "lib/gardensProvider/types";
 import { GetStaticProps, InferGetStaticPropsType } from "next";

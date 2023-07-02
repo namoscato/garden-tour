@@ -1,1 +1,0 @@
-export { GardenMap } from "./GardenMap";

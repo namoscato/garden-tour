@@ -8,18 +8,17 @@ import { TITLE } from "pages/_app";
 import { SyntheticEvent, useEffect, useMemo, useRef, useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
 import CurrentLocationButton from "./CurrentLocationButton";
-import GardenCard from "./GardenCard";
-import classes from "./GardenMap.module.scss";
-import GardenMarker from "./GardenMarker";
-import ParticipationFilterMenu from "./ParticipationFilterMenu";
 import {
   cardWidthFromWindowWidth,
   desktopBreakpoint,
   mapOptionsFromWindowWidth,
   mapPropsFromWindowWidth,
 } from "./functions";
+import GardenCard from "./GardenCard";
+import classes from "./GardenMap.module.scss";
+import GardenMarker from "./GardenMarker";
 import { useCurrentLocation } from "./hooks";
-import { useViewportHeightCssCustomProperty } from "./hooks/useViewportHeightCssCustomProperty";
+import ParticipationFilterMenu from "./ParticipationFilterMenu";
 
 const CURRENT_LOCATION_NUMBER = -1;
 
@@ -27,9 +26,7 @@ interface Props {
   gardens: Garden[];
 }
 
-export function GardenMap(props: Props) {
-  useViewportHeightCssCustomProperty();
-
+export default function GardenMap(props: Props) {
   const navigation = useRef<HTMLDivElement | null>(null);
   const gardenItems = useRef<Record<number, HTMLLIElement | null>>({});
 
