@@ -2177,7 +2177,7 @@ __metadata:
     prettier: 2.8.8
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-geolocated: ^4.0.3
+    react-geolocated: ^4.1.2
     react-schemaorg: ^2.0.0
     sass: ^1.62.1
     schema-dts: ^1.1.2
@@ -4208,12 +4208,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-geolocated@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "react-geolocated@npm:4.0.3"
+"react-geolocated@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "react-geolocated@npm:4.1.2"
   peerDependencies:
     react: ">= 16.8.0 < 19.0.0"
-  checksum: 51cba93ea6f07ecc63107596f14f940e539a7ee017420a49fd8bf8a5c8d26c6f15503b7b743281184e465573993b18e2eddedcaa39eb53c95b88fb70cda54a03
+  checksum: d7806b1dccbb8d40d1f6ac97e69922d6a2dbc19900cc3e39d31d4c77f849b440b25ac343b4a7a237f9978f50548361e77391890c56a1e88ebe82d1ae6964efd2
   languageName: node
   linkType: hard
 
