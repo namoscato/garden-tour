@@ -491,12 +491,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/google-map-react@npm:^2.1.7":
-  version: 2.1.7
-  resolution: "@types/google-map-react@npm:2.1.7"
+"@types/google-map-react@npm:^2.1.10":
+  version: 2.1.10
+  resolution: "@types/google-map-react@npm:2.1.10"
   dependencies:
     "@types/react": "*"
-  checksum: 0e8e014208e39624c861616021b4f8f8e085caaad3600418f33e6bf2481451ea97a1167ae4a2157cf3d1e397905721955a012b00e55d7c07d7e4bd95694dc69e
+  checksum: 92d2977c6407aa1ff72ab18330e869c4f1b51eb1f2d0800e1b73e20d400be41105107719a29b6918d4959c018442f3b6fb4dbc8c9ded184895c8c36bf4e80e7b
   languageName: node
   linkType: hard
 
@@ -2541,7 +2541,7 @@ __metadata:
     "@react-hook/window-size": ^3.1.1
     "@szhsin/react-menu": ^3.5.3
     "@typeform/embed": ^4.10.0
-    "@types/google-map-react": ^2.1.7
+    "@types/google-map-react": ^2.1.10
     "@types/google-spreadsheet": ^3.3.1
     "@types/google.maps": ^3.52.6
     "@types/gtag.js": ^0.0.12
