@@ -183,7 +183,9 @@ export function GardenMap(props: Props) {
           {gardens.map((garden) => (
             <li
               key={garden.number}
-              ref={(li) => (gardenItems.current[garden.number] = li)}
+              ref={(li) => {
+                gardenItems.current[garden.number] = li;
+              }}
             >
               <GardenCard
                 garden={garden}
