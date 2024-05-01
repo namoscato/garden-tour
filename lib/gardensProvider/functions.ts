@@ -16,12 +16,12 @@ export async function geocodedRowsFromSheet(
     try {
       const { formatted_address, geometry } = await geocodeAddress(
         mapsClient,
-        row[SheetColumn.Address]
+        row.get(SheetColumn.Address)
       );
 
-      row[SheetColumn.FormattedAddress] = formatted_address;
-      row[SheetColumn.Lat] = geometry.location.lat;
-      row[SheetColumn.Lng] = geometry.location.lng;
+      row.set(SheetColumn.FormattedAddress, formatted_address);
+      row.set(SheetColumn.Lat, geometry.location.lat);
+      row.set(SheetColumn.Lng, geometry.location.lng);
 
       await row.save();
     } catch (e) {
@@ -33,7 +33,7 @@ export async function geocodedRowsFromSheet(
 }
 
 export function isRowGeocoded(row: GoogleSpreadsheetRow): boolean {
-  return Boolean(row[SheetColumn.Lat] && row[SheetColumn.Lng]);
+  return Boolean(row.get(SheetColumn.Lat) && row.get(SheetColumn.Lng));
 }
 
 export async function geocodeAddress(
@@ -67,13 +67,13 @@ export async function geocodeAddress(
 
 export function gardenFromRow(row: GoogleSpreadsheetRow): Garden {
   return {
-    number: Number(row[SheetColumn.Number]),
-    address: row[SheetColumn.Address],
-    description: row[SheetColumn.Description],
-    participation: PARTICIPATION_OPTIONS.filter((option) => row[option]),
+    number: Number(row.get(SheetColumn.Number)),
+    address: row.get(SheetColumn.Address),
+    description: row.get(SheetColumn.Description),
+    participation: PARTICIPATION_OPTIONS.filter((option) => row.get(option)),
     location: {
-      lat: Number(row[SheetColumn.Lat]),
-      lng: Number(row[SheetColumn.Lng]),
+      lat: Number(row.get(SheetColumn.Lat)),
+      lng: Number(row.get(SheetColumn.Lng)),
     },
   };
 }
