@@ -58,7 +58,7 @@ export default function Home() {
             >
               Register
             </Link>
-            by June 7
+            by June 14
           </div>
           <h1 className="title">About</h1>
           <p>
