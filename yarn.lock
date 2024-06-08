@@ -2220,7 +2220,7 @@ __metadata:
     eslint-config-next: ^14.2.3
     google-auth-library: ^9.9.0
     google-map-react: ^2.2.0
-    google-spreadsheet: ^4.1.1
+    google-spreadsheet: ^4.1.2
     lodash: ^4.17.21
     next: ^14.2.3
     next-seo: ^6.5.0
@@ -2485,9 +2485,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-spreadsheet@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "google-spreadsheet@npm:4.1.1"
+"google-spreadsheet@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "google-spreadsheet@npm:4.1.2"
   dependencies:
     axios: ^1.4.0
     lodash: ^4.17.21
@@ -2496,7 +2496,7 @@ __metadata:
   peerDependenciesMeta:
     google-auth-library:
       optional: true
-  checksum: 273ed0c150f69e8a11a1ea4bf621c8c608debbbd9b470e55f270adb241e1a29ead5aff258bea9d7c70081b76d64c851b48726dfaf7c08d22789b4af8722fc571
+  checksum: 3a2e8a24dd900010d423e02ae126cc7c1d1ed50d231c7c9251e1ab829efffdd76bb4769c88e149dfc8f1c443fffb40f60fdf9bb577327e51577b9c932272ba63
   languageName: node
   linkType: hard
 
