@@ -53,12 +53,11 @@ export default function Home() {
           <Dates />
           <div className={classes.callToAction}>
             <Link
-              href="/register"
+              href="/guide"
               className={cn("button", classes.callToActionButton)}
             >
-              Register
+              View Guide
             </Link>
-            by June 14
           </div>
           <h1 className="title">About</h1>
           <p>
