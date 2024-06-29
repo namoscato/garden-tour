@@ -58,6 +58,16 @@ export default function Home() {
             >
               View Guide
             </Link>
+            <span>
+              or&nbsp;
+              <a
+                href="/files/2024%20Garden%20Tour%20Map.pdf"
+                target="_blank"
+                download
+              >
+                Download
+              </a>
+            </span>
           </div>
           <h1 className="title">About</h1>
           <p>
