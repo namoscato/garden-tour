@@ -4,9 +4,11 @@
     "Geocoded",
     "geolocated",
     "gtag",
+    "lavocats",
     "stylelint",
     "Tonawanda",
     "typeform",
+    "unoptimized",
     "VERCEL"
   ],
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
