@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.root {
+  border-bottom: none !important;
+  display: block;
+}
+
+.image {
+  border: 1px solid $color-gray-light;
+  box-sizing: border-box;
+  display: block;
+}
