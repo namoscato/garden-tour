@@ -28,7 +28,7 @@
     "react-dom": "^18.3.1",
     "react-geolocated": "^4.1.2",
     "react-schemaorg": "^2.0.0",
-    "sass": "^1.62.1",
+    "sass": "^1.77.6",
     "use-debounce": "^10.0.1"
   },
   "devDependencies": {
