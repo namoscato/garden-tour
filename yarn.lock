@@ -473,10 +473,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/google.maps@npm:^3.52.6":
-  version: 3.52.6
-  resolution: "@types/google.maps@npm:3.52.6"
-  checksum: 3ab6e3739fe7ecb5393596880a72c7f68cdb50f603305e4b61840d47d2d7bdb1efe65055f8dbebc666464dbeed3f0fbf6d6ca31507f20cd328111676aea18dda
+"@types/google.maps@npm:^3.55.11":
+  version: 3.55.11
+  resolution: "@types/google.maps@npm:3.55.11"
+  checksum: c2253bc64dea6415ae7d8d1d3614e47b69cd6a22129e96e2b163ef1a4fe889afff9398e182847d157ea8747137b97b1fc566e6bc51f4e1b6a672300d9d367acb
   languageName: node
   linkType: hard
 
@@ -2210,7 +2210,7 @@ __metadata:
     "@szhsin/react-menu": ^4.1.0
     "@typeform/embed": ^4.10.0
     "@types/google-map-react": ^2.1.10
-    "@types/google.maps": ^3.52.6
+    "@types/google.maps": ^3.55.11
     "@types/gtag.js": ^0.0.12
     "@types/lodash": ^4.17.6
     "@types/node": ^18.19.39
