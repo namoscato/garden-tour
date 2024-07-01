@@ -44,7 +44,7 @@ export default function ParticipationFilterMenu({ value, onChange }: Props) {
                 new Map([
                   ...Array.from(value.entries()),
                   [option, Boolean(event.checked)],
-                ])
+                ]),
               );
 
               if (event.checked) {

@@ -15,13 +15,13 @@ export async function fetchGardens(): Promise<Garden[]> {
 
   const document = new GoogleSpreadsheet(
     process.env.GOOGLE_SHEETS_DOCUMENT_ID ?? "",
-    serviceAccountAuth
+    serviceAccountAuth,
   );
 
   await document.loadInfo();
 
   const rows = await geocodedRowsFromSheet(
-    document.sheetsById[Number(process.env.GOOGLE_SHEETS_SHEET_ID ?? "")]
+    document.sheetsById[Number(process.env.GOOGLE_SHEETS_SHEET_ID ?? "")],
   );
 
   return rows.map(gardenFromRow).sort((a, b) => a.number - b.number);
