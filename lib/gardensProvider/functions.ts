@@ -7,7 +7,7 @@ import { POSTAL_CODES } from "./constants";
 import { Garden, PARTICIPATION_OPTIONS, SheetColumn } from "./types";
 
 export async function geocodedRowsFromSheet(
-  sheet: GoogleSpreadsheetWorksheet
+  sheet: GoogleSpreadsheetWorksheet,
 ): Promise<GoogleSpreadsheetRow[]> {
   const rows = await sheet.getRows();
   const mapsClient = new Client();
@@ -16,7 +16,7 @@ export async function geocodedRowsFromSheet(
     try {
       const { formatted_address, geometry } = await geocodeAddress(
         mapsClient,
-        row.get(SheetColumn.Address)
+        row.get(SheetColumn.Address),
       );
 
       row.set(SheetColumn.FormattedAddress, formatted_address);
@@ -39,7 +39,7 @@ export function isRowGeocoded(row: GoogleSpreadsheetRow): boolean {
 export async function geocodeAddress(
   client: Client,
   address: string,
-  key = process.env.GOOGLE_MAPS_GEOCODING_API_KEY ?? ""
+  key = process.env.GOOGLE_MAPS_GEOCODING_API_KEY ?? "",
 ): Promise<GeocodeResult> {
   console.log("Geocoding address", { address });
   for (const postalCode of POSTAL_CODES) {
@@ -71,7 +71,7 @@ export function gardenFromRow(row: GoogleSpreadsheetRow): Garden {
     address: row.get(SheetColumn.Address),
     description: row.get(SheetColumn.Description),
     participation: PARTICIPATION_OPTIONS.filter(
-      (option) => "FALSE" !== row.get(option)
+      (option) => "FALSE" !== row.get(option),
     ),
     location: {
       lat: Number(row.get(SheetColumn.Lat)),

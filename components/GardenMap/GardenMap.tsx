@@ -34,7 +34,7 @@ export function GardenMap(props: Props) {
   const [mapProps] = useState(mapPropsFromWindowWidth(windowWidth));
   const [mapOptions] = useState(mapOptionsFromWindowWidth(windowWidth));
   const [center, setCenter] = useState<Coords | undefined>(
-    mapProps.defaultCenter
+    mapProps.defaultCenter,
   );
 
   const [marginBounds, setMarginBounds] = useState<Bounds>();
@@ -44,7 +44,7 @@ export function GardenMap(props: Props) {
     if (marginBounds && undefined !== window.google) {
       latLngBounds.current = new google.maps.LatLngBounds(
         new google.maps.LatLng(marginBounds.sw),
-        new google.maps.LatLng(marginBounds.ne)
+        new google.maps.LatLng(marginBounds.ne),
       );
     }
   };
@@ -121,7 +121,7 @@ export function GardenMap(props: Props) {
 
       const target = event.target as HTMLDivElement;
       const index = Math.round(
-        target.scrollLeft / cardWidthFromWindowWidth(windowWidth)
+        target.scrollLeft / cardWidthFromWindowWidth(windowWidth),
       );
       const garden = gardens[index];
 
@@ -129,7 +129,7 @@ export function GardenMap(props: Props) {
         setActiveGarden(garden.number);
       }
     },
-    100
+    100,
   );
 
   return (

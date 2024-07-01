@@ -41,7 +41,7 @@ export function mapOptionsFromWindowWidth(windowWidth: number): MapOptions {
 }
 
 export function labelFromParticipationOption(
-  option: ParticipationOption
+  option: ParticipationOption,
 ): string {
   switch (option) {
     case SheetColumn.ParticipationFridayNight:

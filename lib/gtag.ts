@@ -11,7 +11,7 @@ export function viewPage(url: string): void {
 export function sendEvent(
   action: string,
   category: string,
-  label: string
+  label: string,
 ): void {
   window.gtag("event", action, {
     event_category: category,

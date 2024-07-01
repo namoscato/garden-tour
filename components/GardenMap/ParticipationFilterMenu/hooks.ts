@@ -9,18 +9,18 @@ import { labelFromDays } from "./functions";
 
 const FULL_DAYS = uniq(
   PARTICIPATION_OPTIONS.map<number>(
-    (participation) => PARTICIPATION_DATE[participation].day
-  )
+    (participation) => PARTICIPATION_DATE[participation].day,
+  ),
 );
 
 export function useDayLabel(
-  participationFilter: Map<ParticipationOption, boolean>
+  participationFilter: Map<ParticipationOption, boolean>,
 ): string {
   return useMemo<string>(() => {
     const days = uniq(
       PARTICIPATION_OPTIONS.filter((participation) =>
-        participationFilter.get(participation)
-      ).map<number>((participation) => PARTICIPATION_DATE[participation].day)
+        participationFilter.get(participation),
+      ).map<number>((participation) => PARTICIPATION_DATE[participation].day),
     );
 
     return labelFromDays(0 === days.length ? FULL_DAYS : days);
