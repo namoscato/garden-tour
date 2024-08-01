@@ -2218,7 +2218,7 @@ __metadata:
     classnames: ^2.5.1
     eslint: 8.39.0
     eslint-config-next: ^14.2.4
-    google-auth-library: ^9.11.0
+    google-auth-library: ^9.13.0
     google-map-react: ^2.2.0
     google-spreadsheet: ^4.1.2
     lodash: ^4.17.21
@@ -2456,9 +2456,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-auth-library@npm:^9.11.0":
-  version: 9.11.0
-  resolution: "google-auth-library@npm:9.11.0"
+"google-auth-library@npm:^9.13.0":
+  version: 9.13.0
+  resolution: "google-auth-library@npm:9.13.0"
   dependencies:
     base64-js: ^1.3.0
     ecdsa-sig-formatter: ^1.0.11
@@ -2466,7 +2466,7 @@ __metadata:
     gcp-metadata: ^6.1.0
     gtoken: ^7.0.0
     jws: ^4.0.0
-  checksum: 984d344b5e0a21ea1e097d06e27173035619c0e8f89a363e538b445adb1414b79e938b56b4432aa36fda074c5922fa6a34f9b64734765c01dff73c45c8568554
+  checksum: 1ccedc9b6ef6a274e78256aa602b3fb6dd44b3df41d5514058518775f3990a95e7ab0ebad74fe8a3e4f10c23dc8e6a8074bf132f3cc338f335d0e9a6095f8fd4
   languageName: node
   linkType: hard
 
