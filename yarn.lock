@@ -437,16 +437,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@szhsin/react-menu@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@szhsin/react-menu@npm:4.1.0"
+"@szhsin/react-menu@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "@szhsin/react-menu@npm:4.2.2"
   dependencies:
     prop-types: ^15.7.2
     react-transition-state: ^2.1.0
   peerDependencies:
     react: ">=16.14.0"
     react-dom: ">=16.14.0"
-  checksum: 60cd38fbac1c997ff30c3e50c3efd393a403e18a77970b5199477f3e06cb047015ef363e30419a0b5fed2b7976f439296d5f1e8f5a738635e3c960678fd9cc93
+  checksum: b65c231e5a5fb258aa3211c6acc93b805df2992b55dcbd791535745b1a1670ce4ee3ecdf83e271621cfc3f78fed5e8768c32004fc0fe3d1ef4f93c6a53b41086
   languageName: node
   linkType: hard
 
@@ -2207,7 +2207,7 @@ __metadata:
   dependencies:
     "@googlemaps/google-maps-services-js": ^3.4.0
     "@react-hook/window-size": ^3.1.1
-    "@szhsin/react-menu": ^4.1.0
+    "@szhsin/react-menu": ^4.2.2
     "@typeform/embed": ^4.10.0
     "@types/google-map-react": ^2.1.10
     "@types/google.maps": ^3.55.11
