@@ -2225,7 +2225,7 @@ __metadata:
     next: ^14.2.4
     next-seo: ^6.5.0
     normalize.css: ^8.0.1
-    postcss: ^8.4.39
+    postcss: ^8.4.42
     prettier: 3.3.2
     react: ^18.3.1
     react-dom: ^18.3.1
@@ -4132,14 +4132,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.39":
-  version: 8.4.39
-  resolution: "postcss@npm:8.4.39"
+"postcss@npm:^8.4.42":
+  version: 8.4.42
+  resolution: "postcss@npm:8.4.42"
   dependencies:
     nanoid: ^3.3.7
     picocolors: ^1.0.1
     source-map-js: ^1.2.0
-  checksum: 14b130c90f165961772bdaf99c67f907f3d16494adf0868e57ef68baa67e0d1f6762db9d41ab0f4d09bab6fb7888588dba3596afd1a235fd5c2d43fba7006ac6
+  checksum: 78a6ea96611b3c7affbd2e1a9a736ba24084f1f5b6f4fc688621e60ca407612472232af008d478b9e5992329f2dfa00eea4425a727fd46fa1eeabe682545d9dd
   languageName: node
   linkType: hard
 
