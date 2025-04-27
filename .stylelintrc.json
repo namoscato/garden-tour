@@ -6,6 +6,7 @@
       {
         "message": "Selector should be written in camelCase (selector-class-pattern)"
       }
-    ]
+    ],
+    "@stylistic/string-quotes": null
   }
 }
