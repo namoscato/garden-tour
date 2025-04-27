@@ -29,7 +29,7 @@
     "react-geolocated": "^4.1.2",
     "react-schemaorg": "^2.0.0",
     "sass": "^1.77.6",
-    "use-debounce": "^10.0.1"
+    "use-debounce": "^10.0.4"
   },
   "devDependencies": {
     "@types/google-map-react": "^2.1.10",
