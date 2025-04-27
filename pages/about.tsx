@@ -1,4 +1,3 @@
-import "@typeform/embed/build/css/widget.css";
 import Content from "components/Content";
 import Layout from "components/Layout";
 
