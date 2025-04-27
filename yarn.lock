@@ -2800,7 +2800,7 @@ __metadata:
     stylelint: "npm:^16.19.1"
     stylelint-config-sass-guidelines: "npm:^11"
     typescript: "npm:^5.8.3"
-    use-debounce: "npm:^10.0.1"
+    use-debounce: "npm:^10.0.4"
   languageName: unknown
   linkType: soft
 
@@ -6174,12 +6174,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-debounce@npm:^10.0.1":
-  version: 10.0.1
-  resolution: "use-debounce@npm:10.0.1"
+"use-debounce@npm:^10.0.4":
+  version: 10.0.4
+  resolution: "use-debounce@npm:10.0.4"
   peerDependencies:
-    react: ">=16.8.0"
-  checksum: 10/e6e9f2cfd698faf5d581eb57d17901e804b731ad5206c1b3b709d43f2180a67105d3b679645aa3e9c61c7ceb76bb70a4d0923fcf5c3528802a4e9bc9a685d423
+    react: "*"
+  checksum: 10/e193bbed307204b655abab545704ca608b23db10680f299f4b9b48b935a9fd68b68827c79de3bf5517010524bfa15709bf6b0ab1f915d6305b5d2ce27bf11ad7
   languageName: node
   linkType: hard
 
