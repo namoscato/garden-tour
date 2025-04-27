@@ -187,16 +187,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@googlemaps/google-maps-services-js@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "@googlemaps/google-maps-services-js@npm:3.4.0"
+"@googlemaps/google-maps-services-js@npm:^3.4.1":
+  version: 3.4.1
+  resolution: "@googlemaps/google-maps-services-js@npm:3.4.1"
   dependencies:
     "@googlemaps/url-signature": "npm:^1.0.4"
     agentkeepalive: "npm:^4.1.0"
     axios: "npm:^1.5.1"
     query-string: "npm:<8.x"
     retry-axios: "npm:<3.x"
-  checksum: 10/776cc96b1733ceb8fc399ebe03e641b43715b88d2d42bcb2b9433e0e14289cddcbde2eedd1c0f200ace052635543c50c2bb72d05fd8d1cd075e84517ea901fbf
+  checksum: 10/704b12206cc3047670e8e760ccbf050097b518db6cbee967bfc4634cbb8a8e577b15f5515505b4a5619d6c1f77d9fe4cec25e4220e08e259967897e244e443d8
   languageName: node
   linkType: hard
 
@@ -2769,7 +2769,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "garden-tour@workspace:."
   dependencies:
-    "@googlemaps/google-maps-services-js": "npm:^3.4.0"
+    "@googlemaps/google-maps-services-js": "npm:^3.4.1"
     "@react-hook/window-size": "npm:^3.1.1"
     "@szhsin/react-menu": "npm:^4.4.0"
     "@typeform/embed": "npm:^5.3.1"
