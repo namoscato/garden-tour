@@ -1237,7 +1237,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.4.0, axios@npm:^1.5.1":
+"axios@npm:^1.5.1, axios@npm:^1.7.7":
   version: 1.9.0
   resolution: "axios@npm:1.9.0"
   dependencies:
@@ -2784,7 +2784,7 @@ __metadata:
     eslint-config-next: "npm:^15.3.1"
     google-auth-library: "npm:^9.15.1"
     google-map-react: "npm:^2.2.0"
-    google-spreadsheet: "npm:^4.1.2"
+    google-spreadsheet: "npm:^4.1.4"
     lodash: "npm:^4.17.21"
     next: "npm:^15.3.1"
     next-seo: "npm:^6.6.0"
@@ -3081,18 +3081,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-spreadsheet@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "google-spreadsheet@npm:4.1.2"
+"google-spreadsheet@npm:^4.1.4":
+  version: 4.1.4
+  resolution: "google-spreadsheet@npm:4.1.4"
   dependencies:
-    axios: "npm:^1.4.0"
+    axios: "npm:^1.7.7"
     lodash: "npm:^4.17.21"
   peerDependencies:
     google-auth-library: ^8.8.0 || ^9.0.0
   peerDependenciesMeta:
     google-auth-library:
       optional: true
-  checksum: 10/7121b13050e622c1aec0595cda70210b3f354683a06dea6a7a73514bf0c8b34f38e30b5dd59e055687d7da0b466ae26d748a49fc75b612289f04c090ea62f207
+  checksum: 10/37359c9816228b2e83a3870361f81e115c1cf627ff2a7c411c6811e2a2c65d86d34e6dbe3800d24b4f9b5d1e6708551aa80b165a939486548425476b79cb7221
   languageName: node
   linkType: hard
 
