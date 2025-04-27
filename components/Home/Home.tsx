@@ -3,7 +3,6 @@ import Dates from "components/Dates";
 import { YEAR } from "components/Dates/constants";
 import Link from "next/link";
 import classes from "./Home.module.scss";
-import { Sponsors } from "./Sponsors";
 
 export const Home = () => {
   return (
@@ -12,21 +11,12 @@ export const Home = () => {
       <Dates />
       <div className={classes.callToAction}>
         <Link
-          href="/guide"
+          href="/register"
           className={cn("button", classes.callToActionButton)}
         >
-          View Guide
+          Register
         </Link>
-        <span>
-          or&nbsp;
-          <a
-            href="/files/2024%20Garden%20Tour%20Map.pdf"
-            target="_blank"
-            download
-          >
-            Download
-          </a>
-        </span>
+        by June 6
       </div>
       <h1 className="title">About</h1>
       <p>
@@ -36,7 +26,6 @@ export const Home = () => {
         time goes on, the Ken-Ton Garden Tour continues to engender a sense of
         civic pride. <Link href="/about">Read more</Link>.
       </p>
-      <Sponsors />
     </div>
   );
 };

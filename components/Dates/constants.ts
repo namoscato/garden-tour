@@ -1,7 +1,7 @@
 import { ParticipationOption, SheetColumn } from "lib/gardensProvider/types";
 import { ParticipationDate } from "./types";
 
-export const YEAR = 2024;
+export const YEAR = 2025;
 
 export const MONTH = "July";
 
@@ -14,19 +14,19 @@ export const PARTICIPATION_DATE: Record<
   ParticipationDate
 > = {
   [SheetColumn.ParticipationFridayNight]: {
-    day: 19,
+    day: 18,
     time: TIME_NIGHT,
   },
   [SheetColumn.ParticipationSaturdayDay]: {
-    day: 20,
+    day: 19,
     time: TIME_DAY,
   },
   [SheetColumn.ParticipationSaturdayNight]: {
-    day: 20,
+    day: 19,
     time: TIME_NIGHT,
   },
   [SheetColumn.ParticipationSundayDay]: {
-    day: 21,
+    day: 20,
     time: TIME_DAY,
   },
 };

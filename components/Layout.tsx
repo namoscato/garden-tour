@@ -23,7 +23,7 @@ export default function Layout({ children, title }: Props) {
           <div>
             <nav className={classes.nav}>
               <NavigationLink href="/">Home</NavigationLink>
-              <NavigationLink href="/guide">Guide</NavigationLink>
+              <NavigationLink href="/register">Register</NavigationLink>
               <NavigationLink href="/about">About</NavigationLink>
             </nav>
             {!!title && <h1 className={classes.title}>{title}</h1>}
