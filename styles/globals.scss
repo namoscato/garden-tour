@@ -1,9 +1,9 @@
 @use "sass:color";
 @import "variables";
 
-/* stylelint-disable-next-line selector-max-id */
 html,
 body,
+/* stylelint-disable-next-line selector-max-id */
 #__next {
   height: 100%;
 }
