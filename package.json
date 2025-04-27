@@ -36,16 +36,16 @@
     "@types/google.maps": "^3.55.11",
     "@types/gtag.js": "^0.0.20",
     "@types/lodash": "^4.17.6",
-    "@types/node": "^18.19.39",
+    "@types/node": "^22.15.2",
     "@types/react": "^18.3.3",
     "eslint": "^9.25.1",
     "eslint-config-next": "^15.3.1",
-    "postcss": "^8.4.39",
+    "postcss": "^8.5.3",
     "prettier": "3.3.2",
     "schema-dts": "^1.1.2",
     "stylelint": "^15.6.0",
     "stylelint-config-sass-guidelines": "^10.0.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.8.3"
   },
   "packageManager": "yarn@4.9.1"
 }
