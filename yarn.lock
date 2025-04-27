@@ -723,10 +723,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/google.maps@npm:^3.55.11":
-  version: 3.55.11
-  resolution: "@types/google.maps@npm:3.55.11"
-  checksum: 10/7755ee4836c0bdf1e48cd9dbec21687207c7ad0b7ddd935ca9b9c57d6ba12b38cfa12a61a2d51b715f35130d8c9f498d149820d2f4b303fafac50aec38109880
+"@types/google.maps@npm:^3.58.1":
+  version: 3.58.1
+  resolution: "@types/google.maps@npm:3.58.1"
+  checksum: 10/3d5aaa901c0b5dcce45dc9f667912c04b99be0b4a8b541b5120b677697d17116684fddb457bea4955142755c9089993ea4b48b30705283c16935473b1818ecd1
   languageName: node
   linkType: hard
 
@@ -2774,7 +2774,7 @@ __metadata:
     "@szhsin/react-menu": "npm:^4.4.0"
     "@typeform/embed": "npm:^5.3.1"
     "@types/google-map-react": "npm:^2.1.10"
-    "@types/google.maps": "npm:^3.55.11"
+    "@types/google.maps": "npm:^3.58.1"
     "@types/gtag.js": "npm:^0.0.20"
     "@types/lodash": "npm:^4.17.6"
     "@types/node": "npm:^22.15.2"
