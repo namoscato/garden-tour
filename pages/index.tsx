@@ -18,8 +18,8 @@ export default function HomePage() {
             "@context": "https://schema.org",
             "@type": "Event",
             name: TITLE,
-            startDate: "2024-07-19T20:30:00-05:00",
-            endDate: "2024-07-21T16:00:00-05:00",
+            startDate: "2025-07-18T20:30:00-05:00",
+            endDate: "2025-07-20T16:00:00-05:00",
             eventAttendanceMode:
               "https://schema.org/OfflineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
