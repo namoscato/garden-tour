@@ -3,6 +3,7 @@ import Dates from "components/Dates";
 import { YEAR } from "components/Dates/constants";
 import Link from "next/link";
 import classes from "./Home.module.scss";
+import { Sponsors } from "./Sponsors";
 
 export const Home = () => {
   return (
@@ -26,6 +27,7 @@ export const Home = () => {
         time goes on, the Ken-Ton Garden Tour continues to engender a sense of
         civic pride. <Link href="/about">Read more</Link>.
       </p>
+      <Sponsors />
     </div>
   );
 };
