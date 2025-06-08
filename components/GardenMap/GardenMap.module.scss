@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@use "../../styles/variables";
 
 .root {
   height: 100%;
@@ -40,7 +40,7 @@
   width: 100%;
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: variables.$breakpoint-desktop) {
   .root {
     display: flex;
     flex-direction: row-reverse;
@@ -70,7 +70,7 @@
   }
 
   .gardenCards > li {
-    border-bottom: 1px solid $color-gray-light;
+    border-bottom: 1px solid variables.$color-gray-light;
     min-width: 0;
     padding: 0;
 

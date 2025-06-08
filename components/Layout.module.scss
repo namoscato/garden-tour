@@ -1,4 +1,4 @@
-@import "../styles/variables";
+@use "../styles/variables";
 
 $image-width: 40vw;
 
@@ -24,26 +24,26 @@ $image-width: 40vw;
 }
 
 .nav {
-  margin: $gutter-sm 0;
+  margin: variables.$gutter-sm 0;
 
   > a {
-    margin-left: $gutter-sm;
+    margin-left: variables.$gutter-sm;
   }
 }
 
 .title {
   font-weight: normal;
-  margin: 1.5rem $gutter-sm;
+  margin: 1.5rem variables.$gutter-sm;
 }
 
 .footer {
-  color: $color-gray;
+  color: variables.$color-gray;
   font-size: 0.9em;
-  margin-top: $gutter-sm;
-  padding: 0 $gutter-sm 2rem;
+  margin-top: variables.$gutter-sm;
+  padding: 0 variables.$gutter-sm 2rem;
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: variables.$breakpoint-desktop) {
   .root {
     padding-top: 0;
   }
@@ -89,7 +89,7 @@ $image-width: 40vw;
   }
 
   .footer {
-    margin: $gutter-lg 0 0 $image-width;
-    padding: 0 $gutter-lg $gutter-lg;
+    margin: variables.$gutter-lg 0 0 $image-width;
+    padding: 0 variables.$gutter-lg variables.$gutter-lg;
   }
 }

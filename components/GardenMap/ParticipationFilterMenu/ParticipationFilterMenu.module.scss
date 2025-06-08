@@ -1,4 +1,4 @@
-@import "../../../styles/variables";
+@use "../../../styles/variables";
 
 .root {
   left: 0;
@@ -26,14 +26,14 @@
 .buttonCaret {
   border-left: 0.3125em solid transparent;
   border-right: 0.3125em solid transparent;
-  border-top: 0.3125em solid $color-gray;
+  border-top: 0.3125em solid variables.$color-gray;
   height: 0;
   margin-left: 0.4em;
   width: 0;
 }
 
 .buttonCaretOpen {
-  border-bottom: 0.3em solid $color-gray;
+  border-bottom: 0.3em solid variables.$color-gray;
   border-top: 0;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .menuItemSubtitle {
-  color: $color-gray;
+  color: variables.$color-gray;
   font-size: 0.85em;
   margin-left: 0.5em;
 }

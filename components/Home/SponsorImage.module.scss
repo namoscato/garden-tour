@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@use "../../styles/variables";
 
 .root {
   border-bottom: 0 !important;
@@ -6,7 +6,7 @@
 }
 
 .image {
-  border: 1px solid $color-gray-light;
+  border: 1px solid variables.$color-gray-light;
   box-sizing: border-box;
   display: block;
 }

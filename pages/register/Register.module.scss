@@ -1,10 +1,10 @@
-@import "../../styles/variables";
+@use "../../styles/variables";
 
 .root {
   height: 100vh;
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: variables.$breakpoint-desktop) {
   .root {
     height: calc(100vh - 189px);
     margin-top: -3rem;
