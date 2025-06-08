@@ -40,14 +40,21 @@ export function GardenMap(props: Props) {
   const [marginBounds, setMarginBounds] = useState<Bounds>();
   const latLngBounds = useRef<google.maps.LatLngBounds>();
 
+  const googleMaps = useRef<typeof google.maps>();
+  const handleGoogleApiLoaded = ({ maps }: { maps: typeof google.maps }) => {
+    googleMaps.current = maps;
+    initializeBounds();
+  };
+
   const initializeBounds = () => {
-    if (marginBounds && undefined !== window.google) {
-      latLngBounds.current = new google.maps.LatLngBounds(
-        new google.maps.LatLng(marginBounds.sw),
-        new google.maps.LatLng(marginBounds.ne),
+    if (marginBounds && googleMaps.current) {
+      latLngBounds.current = new googleMaps.current.LatLngBounds(
+        new googleMaps.current.LatLng(marginBounds.sw.lat, marginBounds.sw.lng),
+        new googleMaps.current.LatLng(marginBounds.ne.lat, marginBounds.ne.lng),
       );
     }
   };
+
   useEffect(initializeBounds, [marginBounds]);
 
   const margin = useMemo<number[]>(() => {
@@ -141,7 +148,7 @@ export function GardenMap(props: Props) {
           center={center}
           options={mapOptions}
           onChange={({ marginBounds }) => setMarginBounds(marginBounds)}
-          onGoogleApiLoaded={initializeBounds}
+          onGoogleApiLoaded={handleGoogleApiLoaded}
           margin={margin}
         >
           {currentLocation && (
