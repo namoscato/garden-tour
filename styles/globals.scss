@@ -1,5 +1,5 @@
 @use "sass:color";
-@import "variables";
+@use "variables";
 
 html,
 body,
@@ -9,35 +9,35 @@ body,
 }
 
 body {
-  background-color: $color-white;
-  color: $color-black;
+  background-color: variables.$color-white;
+  color: variables.$color-black;
 }
 
 .button {
-  background-color: $color-blue;
+  background-color: variables.$color-blue;
   border: 0;
   border-radius: 0.9em;
   box-sizing: border-box;
-  color: $color-white !important;
+  color: variables.$color-white !important;
   cursor: pointer;
   display: inline-block;
   line-height: 1;
   padding: 0.9em 1.1em 0.8em;
   text-decoration: none;
-  transition: background-color $transition-duration !important;
+  transition: background-color variables.$transition-duration !important;
 
   &:hover,
   &:focus {
-    background-color: color.adjust($color-blue, $lightness: 5%);
+    background-color: color.adjust(variables.$color-blue, $lightness: 5%);
   }
 
   &:active {
-    background-color: color.adjust($color-blue, $lightness: -5%);
+    background-color: color.adjust(variables.$color-blue, $lightness: -5%);
   }
 }
 
 .title {
-  color: $color-blue;
+  color: variables.$color-blue;
   font-size: 1em;
   margin-top: 2rem;
   text-transform: uppercase;

@@ -1,7 +1,7 @@
-@import "../../styles/variables";
+@use "../../styles/variables";
 
 .root {
-  background-color: $color-blue;
+  background-color: variables.$color-blue;
   border: 2px solid transparent;
   border-radius: 50%;
   box-sizing: border-box;
@@ -13,14 +13,14 @@
 
 .active {
   animation: pulse 1.5s infinite ease-out;
-  background-color: $color-white;
-  border-color: $color-blue;
+  background-color: variables.$color-white;
+  border-color: variables.$color-blue;
   transform: scale(1.5);
 }
 
 .current {
-  background-color: $color-blue-light;
-  border: 1px solid $color-white;
+  background-color: variables.$color-blue-light;
+  border: 1px solid variables.$color-white;
   box-shadow: 0 0 1em 0.4em rgba(0, 68, 255, 50%);
   transform: scale(1.5);
 }

@@ -1,9 +1,9 @@
-@import "../styles/variables";
+@use "../styles/variables";
 
 $radius: 2.5rem;
 
 .root {
-  background-color: $color-blue;
+  background-color: variables.$color-blue;
   box-shadow: -3px 0 1rem -2px rgb(0 0 0 / 37%);
   display: inline-block;
   margin-bottom: $radius;
@@ -11,7 +11,7 @@ $radius: 2.5rem;
   position: relative;
 
   &::before {
-    background-color: $color-blue;
+    background-color: variables.$color-blue;
     border-radius: 0 0 50% 50%;
     bottom: -$radius;
     content: "";
@@ -27,7 +27,7 @@ $radius: 2.5rem;
   }
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: variables.$breakpoint-desktop) {
   .root {
     box-shadow: 0 -1rem 1rem 0 rgb(0 0 0 / 37%);
   }

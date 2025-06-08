@@ -1,29 +1,29 @@
-@import "../styles/variables";
+@use "../styles/variables";
 
 .root {
   box-sizing: border-box;
   line-height: 1.6;
   max-width: 43.75rem;
-  padding: 0 $gutter-sm;
+  padding: 0 variables.$gutter-sm;
 }
 
 .root a {
-  border-bottom: 1px solid $color-blue;
-  color: $color-blue;
+  border-bottom: 1px solid variables.$color-blue;
+  color: variables.$color-blue;
   text-decoration: none;
   transition:
-    border-bottom-color $transition-duration,
-    color $transition-duration;
+    border-bottom-color variables.$transition-duration,
+    color variables.$transition-duration;
 
   &:hover,
   &:focus {
-    border-bottom-color: $color-black;
-    color: $color-black;
+    border-bottom-color: variables.$color-black;
+    color: variables.$color-black;
   }
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: variables.$breakpoint-desktop) {
   .root {
-    padding: 0 $gutter-lg;
+    padding: 0 variables.$gutter-lg;
   }
 }

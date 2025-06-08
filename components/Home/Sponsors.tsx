@@ -10,21 +10,21 @@ export const Sponsors = () => {
     <>
       <h1 className="title">Sponsors</h1>
       <div className={classes.root}>
-        <div>
+        <div className={classes.column}>
           <SponsorImage
             src={lavocatsImage}
             alt="Lavocats Family Greenhouse and Nursery"
             href="https://www.lavocatsnursery.com/"
             className={classes.image}
           />
-        </div>
-        <div className={classes.column}>
           <SponsorImage
             src={madeForGoodImage}
             alt="Made for Good"
             href="https://www.villageofkenmore.com/made-for-good-shop.html"
             className={classes.image}
           />
+        </div>
+        <div className={classes.column}>
           <SponsorImage
             src={rotaryClubImage}
             alt="Rotary Club of Kenmore"
