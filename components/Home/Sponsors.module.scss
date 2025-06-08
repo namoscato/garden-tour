@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@use "../../styles/variables";
 
 .root,
 .column {
@@ -22,7 +22,7 @@
 @media screen and (min-width: 36rem) {
   .root {
     flex-wrap: nowrap;
-    margin-right: -1 * $gutter-lg;
+    margin-right: -1 * variables.$gutter-lg;
     overflow-y: auto;
   }
 

@@ -1,7 +1,7 @@
-@import "../../styles/variables";
+@use "../../styles/variables";
 
 .root {
-  background-color: $color-white;
+  background-color: variables.$color-white;
   border-radius: 1rem;
   box-shadow: 0 -2px 1rem rgb(0 0 0 / 20%);
   box-sizing: border-box;
@@ -12,16 +12,16 @@
 
 .title {
   align-items: center;
-  color: $color-blue;
+  color: variables.$color-blue;
   display: flex;
   font-size: 1em;
   text-transform: uppercase;
 }
 
 .titleNumber {
-  background-color: $color-blue;
+  background-color: variables.$color-blue;
   border-radius: 50%;
-  color: $color-white;
+  color: variables.$color-white;
   display: inline-block;
   font-size: 0.7em;
   font-weight: normal;
@@ -32,22 +32,22 @@
 }
 
 .participation {
-  color: $color-gray;
+  color: variables.$color-gray;
   font-size: 0.85em;
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: variables.$breakpoint-desktop) {
   .root {
     border-radius: 0;
     box-shadow: none;
     padding-bottom: 1.5rem;
 
     &:hover {
-      background-color: $color-gray-light;
+      background-color: variables.$color-gray-light;
     }
   }
 
   .active {
-    background-color: $color-gray-light;
+    background-color: variables.$color-gray-light;
   }
 }
