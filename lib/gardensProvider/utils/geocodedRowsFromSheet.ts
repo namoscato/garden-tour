@@ -3,8 +3,10 @@ import {
   GoogleSpreadsheetRow,
   GoogleSpreadsheetWorksheet,
 } from "google-spreadsheet";
-import { POSTAL_CODES } from "./constants";
-import { Garden, PARTICIPATION_OPTIONS, SheetColumn } from "./types";
+import { SheetColumn } from "../types";
+
+/** ordered postal code allow list, used for geocode filtering */
+const POSTAL_CODES = [14217, 14223, 14150, 14207] as const satisfies number[];
 
 export async function geocodedRowsFromSheet(
   sheet: GoogleSpreadsheetWorksheet,
@@ -32,11 +34,11 @@ export async function geocodedRowsFromSheet(
   return rows.filter(isRowGeocoded);
 }
 
-export function isRowGeocoded(row: GoogleSpreadsheetRow): boolean {
+function isRowGeocoded(row: GoogleSpreadsheetRow): boolean {
   return Boolean(row.get(SheetColumn.Lat) && row.get(SheetColumn.Lng));
 }
 
-export async function geocodeAddress(
+async function geocodeAddress(
   client: Client,
   address: string,
   key = process.env.GOOGLE_MAPS_GEOCODING_API_KEY ?? "",
@@ -63,19 +65,4 @@ export async function geocodeAddress(
   }
 
   throw new Error(`Unable to geocode: ${address}`);
-}
-
-export function gardenFromRow(row: GoogleSpreadsheetRow): Garden {
-  return {
-    number: Number(row.get(SheetColumn.Number)),
-    address: row.get(SheetColumn.Address),
-    description: row.get(SheetColumn.Description),
-    participation: PARTICIPATION_OPTIONS.filter(
-      (option) => "FALSE" !== row.get(option),
-    ),
-    location: {
-      lat: Number(row.get(SheetColumn.Lat)),
-      lng: Number(row.get(SheetColumn.Lng)),
-    },
-  };
 }
