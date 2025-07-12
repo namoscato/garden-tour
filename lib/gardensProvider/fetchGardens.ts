@@ -1,7 +1,8 @@
 import { JWT } from "google-auth-library";
 import { GoogleSpreadsheet } from "google-spreadsheet";
-import { gardenFromRow, geocodedRowsFromSheet } from "./functions";
 import { Garden } from "./types";
+import { gardenFromRow } from "./utils/gardenFromRow";
+import { geocodedRowsFromSheet } from "./utils/geocodedRowsFromSheet";
 
 export async function fetchGardens(): Promise<Garden[]> {
   const serviceAccountAuth = new JWT({

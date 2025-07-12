@@ -1,5 +1,5 @@
 import { GardenMap } from "components/GardenMap";
-import { fetchGardens } from "lib/gardensProvider";
+import { fetchGardens } from "lib/gardensProvider/fetchGardens";
 import { Garden } from "lib/gardensProvider/types";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { NextSeo } from "next-seo";
