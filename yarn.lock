@@ -2923,7 +2923,7 @@ __metadata:
     react-dom: "npm:^18.3.1"
     react-geolocated: "npm:^4.3.0"
     react-schemaorg: "npm:^2.0.0"
-    sass: "npm:^1.87.0"
+    sass: "npm:^1.93.2"
     schema-dts: "npm:^1.1.5"
     stylelint: "npm:^16.20.0"
     stylelint-config-sass-guidelines: "npm:^11"
@@ -5350,9 +5350,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.87.0":
-  version: 1.87.0
-  resolution: "sass@npm:1.87.0"
+"sass@npm:^1.93.2":
+  version: 1.93.2
+  resolution: "sass@npm:1.93.2"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -5363,7 +5363,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/43c7d9567baf08619edf46b1419882c5459d456968bb7f220eb92d2cb9c344218dbb93f00c4e76624cfd4f862531d37be731845da6a5b538cf10516746908297
+  checksum: 10/2fc0dcafdf3050f4131650a00ddd772790af1dc3e31a97c6533f323efabddce81bd139a920f13a88af80d630a255f51ee91067a7478364b2a13fcc6f5f7e8308
   languageName: node
   linkType: hard
 
