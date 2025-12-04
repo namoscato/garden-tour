@@ -21,7 +21,7 @@
     "google-map-react": "^2.2.5",
     "google-spreadsheet": "^4.1.4",
     "lodash": "^4.17.21",
-    "next": "^15.3.3",
+    "next": "^15.4.8",
     "next-seo": "^6.8.0",
     "normalize.css": "^8.0.1",
     "react": "^18.3.1",
