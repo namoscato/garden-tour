@@ -954,13 +954,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.3.3":
+"@types/react@npm:*":
   version: 18.3.3
   resolution: "@types/react@npm:18.3.3"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10/68e203b7f1f91d6cf21f33fc7af9d6d228035a26c83f514981e54aa3da695d0ec6af10c277c6336de1dd76c4adbe9563f3a21f80c4462000f41e5f370b46e96c
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^19.1.6":
+  version: 19.1.6
+  resolution: "@types/react@npm:19.1.6"
+  dependencies:
+    csstype: "npm:^3.0.2"
+  checksum: 10/722a8efb36dedaf5cfe226287214df0982d612ff33ebf005dbbb646279647e5987da661f2d9fe6b8a4516d3b29dd6cb3a708641265861251abb682e8e90540cf
   languageName: node
   linkType: hard
 
@@ -2906,7 +2915,7 @@ __metadata:
     "@types/gtag.js": "npm:^0.0.20"
     "@types/lodash": "npm:^4.17.16"
     "@types/node": "npm:^22.15.2"
-    "@types/react": "npm:^18.3.3"
+    "@types/react": "npm:^19.1.6"
     classnames: "npm:^2.5.1"
     eslint: "npm:^9.25.1"
     eslint-config-next: "npm:^15.3.3"
@@ -2919,7 +2928,7 @@ __metadata:
     normalize.css: "npm:^8.0.1"
     postcss: "npm:^8.5.3"
     prettier: "npm:3.5.3"
-    react: "npm:^18.3.1"
+    react: "npm:^19.1.0"
     react-dom: "npm:^18.3.1"
     react-geolocated: "npm:^4.3.0"
     react-schemaorg: "npm:^2.0.0"
@@ -5094,12 +5103,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.3.1":
-  version: 18.3.1
-  resolution: "react@npm:18.3.1"
-  dependencies:
-    loose-envify: "npm:^1.1.0"
-  checksum: 10/261137d3f3993eaa2368a83110466fc0e558bc2c7f7ae7ca52d94f03aac945f45146bd85e5f481044db1758a1dbb57879e2fcdd33924e2dde1bdc550ce73f7bf
+"react@npm:^19.1.0":
+  version: 19.1.0
+  resolution: "react@npm:19.1.0"
+  checksum: 10/d0180689826fd9de87e839c365f6f361c561daea397d61d724687cae88f432a307d1c0f53a0ee95ddbe3352c10dac41d7ff1ad85530fb24951b27a39e5398db4
   languageName: node
   linkType: hard
 
