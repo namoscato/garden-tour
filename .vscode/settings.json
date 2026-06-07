@@ -26,5 +26,6 @@
     "less",
     "postcss",
     "scss"
-  ]
+  ],
+  "js/ts.tsdk.path": ".yarn/sdks/typescript/lib"
 }
