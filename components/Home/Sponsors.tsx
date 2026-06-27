@@ -1,5 +1,6 @@
 import { SponsorImage } from "./SponsorImage";
 import classes from "./Sponsors.module.scss";
+import infiniteBloomsImage from "./infinite-blooms.jpg";
 import lavocatsImage from "./lavocats.jpg";
 import madeForGoodImage from "./made-for-good.jpg";
 import policeClubImage from "./police-club.jpg";
@@ -12,19 +13,25 @@ export const Sponsors = () => {
       <div className={classes.root}>
         <div className={classes.column}>
           <SponsorImage
+            src={infiniteBloomsImage}
+            alt="Infinite Blooms Garden Center and Gift Shop"
+            href="https://northtowngardencenter.com/"
+            className={classes.image}
+          />
+          <SponsorImage
             src={lavocatsImage}
             alt="Lavocats Family Greenhouse and Nursery"
             href="https://www.lavocatsnursery.com/"
             className={classes.image}
           />
+        </div>
+        <div className={classes.column}>
           <SponsorImage
             src={madeForGoodImage}
             alt="Made for Good"
             href="https://www.villageofkenmore.com/made-for-good-shop.html"
             className={classes.image}
           />
-        </div>
-        <div className={classes.column}>
           <SponsorImage
             src={rotaryClubImage}
             alt="Rotary Club of Kenmore"
