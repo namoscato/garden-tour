@@ -30,20 +30,3 @@ Ken-Ton Garden Tour event site built with [Next.js](https://nextjs.org/).
 ```
 yarn run dev
 ```
-
-### Upgrade Yarn
-
-This project leverages Yarn's modern [Plug'n'Play](https://yarnpkg.com/features/pnp) installation strategy and includes a respective VSCode editor SDK in version control.
-
-1. [Update Yarn](https://yarnpkg.com/getting-started/install#updating-yarn):
-
-   ```bash
-   yarn set version stable
-   yarn install
-   ```
-
-1. Regenerate [VSCode Yarn PnP SDK](https://yarnpkg.com/getting-started/editor-sdks#vscode):
-
-   ```bash
-   yarn dlx @yarnpkg/sdks vscode
-   ```
