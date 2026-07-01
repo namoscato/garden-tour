@@ -938,12 +938,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^24.12.3":
-  version: 24.12.3
-  resolution: "@types/node@npm:24.12.3"
+"@types/node@npm:^26.0.1":
+  version: 26.0.1
+  resolution: "@types/node@npm:26.0.1"
   dependencies:
-    undici-types: "npm:~7.16.0"
-  checksum: 10/a7441f1505fee5c049b0c64c70707b5081cdeb945537fd9249a4304d636c27213ee9973bfd68cec5e5326e0cab5506d2a45e60d6528882bc8096c6e1195b661a
+    undici-types: "npm:~8.3.0"
+  checksum: 10/c312909c89c4f52291084d5b8b67c119f3c3adce9bdd5e57da74cb4d05059021b2b2b6b5eb52ccb086d66397b5793864e4d48b17d608ab42c27cfc193d337823
   languageName: node
   linkType: hard
 
@@ -2906,7 +2906,7 @@ __metadata:
     "@types/google.maps": "npm:^3.58.1"
     "@types/gtag.js": "npm:^0.0.20"
     "@types/lodash": "npm:^4.17.16"
-    "@types/node": "npm:^24.12.3"
+    "@types/node": "npm:^26.0.1"
     "@types/react": "npm:^18.3.3"
     classnames: "npm:^2.5.1"
     eslint: "npm:^9.25.1"
@@ -6302,10 +6302,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~7.16.0":
-  version: 7.16.0
-  resolution: "undici-types@npm:7.16.0"
-  checksum: 10/db43439f69c2d94cc29f75cbfe9de86df87061d6b0c577ebe9bb3255f49b22c50162a7d7eb413b0458b6510b8ca299ac7cff38c3a29fbd31af9f504bcf7fbc0d
+"undici-types@npm:~8.3.0":
+  version: 8.3.0
+  resolution: "undici-types@npm:8.3.0"
+  checksum: 10/6681d2837ac75a75ac1cc46090aa2b8ddc7c6b8ecc295a6cdb06838752a730da3d8afeecf05e5ab7903160eafad3a8b6ffa1927e5ded260590f4d4fef18646d5
   languageName: node
   linkType: hard
 
