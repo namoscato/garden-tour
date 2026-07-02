@@ -43,8 +43,8 @@
     "postcss": "^8.5.15",
     "prettier": "3.5.3",
     "schema-dts": "^1.1.5",
-    "stylelint": "^16.20.0",
-    "stylelint-config-sass-guidelines": "^11",
+    "stylelint": "^17.14.0",
+    "stylelint-config-sass-guidelines": "^13",
     "typescript": "^5.8.3"
   },
   "packageManager": "yarn@4.17.0"
